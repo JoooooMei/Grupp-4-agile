@@ -29,4 +29,5 @@ Kommentarer och commits på Engelska
 ## Underskrifter
 Johan Meisel
 David Borg
-Johan Meisel 
+Johan Meisel
+Mansoor Zainudini
