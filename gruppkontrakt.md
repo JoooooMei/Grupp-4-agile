@@ -2,15 +2,6 @@
 
 ## Mötesstruktur 
 Möte varje dag (standup) kl 13. Om det krockar med lektion hålls mötet 30 min innan lekltionen. 
-
-<<<<<<< HEAD
-*** Sjukdom/förhinder 
-Meddelar vi varandra?
-Kan vi stötta upp när någon är sjuk/frånvarande? 
-=======
-Kommunikation va teams om man vill kalla till extramöte. 
->>>>>>> f14d30188da6041a16685f955ad8b8a37744f4ce
-
 Måndagsmöte är ett planeringsmöte som startar 12.30. Då gör vi en too-do-lista 
 
 ## Sjukdom/förhinder
@@ -38,3 +29,4 @@ Kommentarer och commits på Engelska
 ## Underskrifter
 Johan Meisel
 David Borg
+Johan Meisel 
