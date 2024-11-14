@@ -30,3 +30,4 @@ Commits med med gitmoji? if applied this will..
 Kommentarer och commits på Engelska 
 
 ## Underskrifter
+Mansoor Zainudini
