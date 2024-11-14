@@ -21,7 +21,7 @@ Vi har viss kunskap om html och css. Inte så mycket vana av javascript
 Mansour gillar backend. Frontent är tråkigt
 David planering management. struktur. Backend är tråkigt. 
 Hannes slutföra projekt. UX är tråkigt. 
-Johan gillar fronten backend och ogillar planering/struktutrering. 
+Johan gillar fronten och backend och ogillar planering/struktutrering. 
 
 ## Arbetsmetoder
 Ska vi enas om plugin i VS code? 
