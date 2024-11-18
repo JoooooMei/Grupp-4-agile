@@ -31,6 +31,13 @@ Använda bindesstreck
 Korta beskrivande selektorer
 Språk engelska 
 
+## Mediaquerys and size
+Mobile first
+768px
+
+Max width body 1400px 
+
+
 ## Underskrifter
 Johan Meisel
 David Borg
