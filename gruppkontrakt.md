@@ -26,6 +26,11 @@ Vi skriver stylesheets i sass
 Commits med med gitmoji? if applied this will.. 
 Kommentarer och commits på Engelska 
 
+## Namnkonventioner
+Använda bindesstreck
+Korta beskrivande selektorer
+Språk engelska 
+
 ## Underskrifter
 Johan Meisel
 David Borg
