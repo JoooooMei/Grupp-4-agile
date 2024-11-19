@@ -1,0 +1,17 @@
+body {
+    header {
+        @import 'components/desktop-header';
+    }
+
+    main {
+        @import 'components/desktop-body';
+    }
+
+    .cookie-banner {
+        @import 'components/desktop-cookie';
+    }
+
+    footer {
+        @import 'components/desktop-footer';
+    }
+}
