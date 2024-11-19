@@ -1,8 +1,9 @@
-## 11/19/24
+## 11/25/24
 
 _____________________________________________
 
 # Emotional Evaluation (Glad, Sad, Mad)
+(Happens at the end of each sprint)
 
 Johan:
     Glad:
