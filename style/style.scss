@@ -1,0 +1,10 @@
+/* CSS Reset */
+@import 'reset';
+
+/* Base CSS */
+@import 'mobile';
+
+/* Desktop CSS */
+@media screen and (min-width: 768px) {
+    @import 'desktop';   
+}
