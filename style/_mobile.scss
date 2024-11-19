@@ -1,0 +1,17 @@
+body {
+    header {
+        @import 'components/mobile/mobile-header';
+    }
+
+    main {
+        @import 'components/mobile/mobile-body';
+    }
+
+    .cookie-banner {
+        @import 'components/mobile/mobile-cookie';
+    }
+
+    footer {
+        @import 'components/mobile/mobile-footer';
+    }
+}
