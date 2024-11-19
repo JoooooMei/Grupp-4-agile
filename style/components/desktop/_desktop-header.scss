@@ -1,171 +1,171 @@
 // ********* Menu Desktop *********
-@media only screen and (min-width: 768px) {
-    // Dimentions Desktop
-    $page-margin: 3rem; // Set minimum outer margin of page
-    $page-max-width: 1400px; // Set max width of page 
-    $menu-height: 120px; // Set height of the header 
-    $nav-width: 800px; // Set width of desktop menu 
 
-    header {
-        padding-inline: $page-margin;
-        height: $menu-height;
-        background-color: $higlight-color;
+// Dimentions Desktop
+$page-margin: 3rem; // Set minimum outer margin of page
+$page-max-width: 1400px; // Set max width of page 
+$menu-height: 120px; // Set height of the header 
+$nav-width: 800px; // Set width of desktop menu 
+
+header {
+    padding-inline: $page-margin;
+    height: $menu-height;
+    background-color: $higlight-color;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    max-width: $page-max-width;
+
+    nav {
+        position: relative;
+        width: $nav-width;
+        margin-left: auto;
+        height: auto;
+        padding: 0;
+        top: 0;
+
     }
 
-    .header-wrapper {
+    ul {
         display: flex;
         flex-direction: row;
         position: relative;
-        align-items: center;
-        height: 100%;
         width: 100%;
-        max-width: $page-max-width;
-
-        nav {
-            position: relative;
-            width: $nav-width;
-            margin-left: auto;
-            height: auto;
-            padding: 0;
-            top: 0;
-
-        }
-
-        ul {
-            display: flex;
-            flex-direction: row;
-            position: relative;
-            width: 100%;
-            height: auto;
-            justify-content: space-between;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-
-            * {
-                // Edit main menu styles here
-                position: relative;
-                text-decoration: none;
-                font-size: 1.3rem;
-                font-weight: 600;
-                color: inherit;
-            }
-        }
-
-        .logo-wrapper {
-            margin-right: $page-margin * 2;
-        }
-    }
-
-    .timeline-wrapper {
-        display: flex;
-        position: absolute;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width: 100%;
-
-        .timeline {
-            height: 0px !important; // Fix !important later 
-            width: calc(100% - 25px);
-            border: 2px solid $dark-color;
-            border-radius: 2px;
-        }
-    }
-
-
-    // Adjust position menu items 
-    nav {
-        // Edit theese variables to adjust positions in alternating menu items.
-        $distance-from-line: 30px;
-        $dot-adjustment: -3px;
-
         height: auto;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        padding: 0;
 
-        li:nth-child(1) a {
-            padding-top: $distance-from-line;
-            top: $distance-from-line;
-
-            &::after {
-                top: $dot-adjustment;
-            }
-        }
-
-        li:nth-child(2) a {
-            padding-bottom: $distance-from-line;
-            top: - $distance-from-line;
-
-            &::after {
-                bottom: $dot-adjustment;
-            }
-        }
-
-        li:nth-child(3) a {
-            padding-top: $distance-from-line;
-            top: $distance-from-line;
-
-            &::after {
-                top: $dot-adjustment;
-            }
-        }
-
-        li:nth-child(4) a {
-            padding-bottom: $distance-from-line;
-            top: - $distance-from-line;
-
-            &::after {
-                bottom: $dot-adjustment;
-            }
-        }
-
-        li:nth-child(5) a {
-            padding-top: $distance-from-line;
-            top: $distance-from-line;
-
-            &::after {
-                top: $dot-adjustment;
-            }
-        }
-
-        li:nth-child(6) a {
-            padding-bottom: $distance-from-line;
-            top: - $distance-from-line;
-
-            &::after {
-                bottom: $dot-adjustment;
-            }
-        }
-
-        li:nth-child(7) a {
-            padding-top: $distance-from-line;
-            top: $distance-from-line;
-
-            &::after {
-                top: $dot-adjustment;
-            }
+        * {
+            // Edit main menu styles here
+            position: relative;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: inherit;
         }
     }
 
-    .header-wrapper {
-
-        // Dots on timeline 
-        a::after {
-            content: '';
-            display: inline-block;
-            position: absolute;
-            height: 30px;
-            left: 22%;
-            aspect-ratio: 1 / 1;
-            border-radius: 100%;
-            background-color: $dark-color;
-            transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
-            border: 5px solid $higlight-color;
-        }
-
-        a:hover::after {
-            transform: scale(1.2);
-        }
-
-
+    .logo-wrapper {
+        margin-right: $page-margin * 2;
     }
+}
+
+.timeline-wrapper {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    .timeline {
+        height: 0px !important; // Fix !important later 
+        width: calc(100% - 25px);
+        border: 2px solid $dark-color;
+        border-radius: 2px;
+    }
+}
+
+
+// Adjust position menu items 
+
+nav {
+    // Edit theese variables to adjust positions in alternating menu items.
+    $distance-from-line: 30px;
+    $dot-adjustment: -3px;
+
+    height: auto;
+
+    li:nth-child(1) a {
+        padding-top: $distance-from-line;
+        top: $distance-from-line;
+
+        &::after {
+            top: $dot-adjustment;
+        }
+    }
+
+    li:nth-child(2) a {
+        padding-bottom: $distance-from-line;
+        top: - $distance-from-line;
+
+        &::after {
+            bottom: $dot-adjustment;
+        }
+    }
+
+    li:nth-child(3) a {
+        padding-top: $distance-from-line;
+        top: $distance-from-line;
+
+        &::after {
+            top: $dot-adjustment;
+        }
+    }
+
+    li:nth-child(4) a {
+        padding-bottom: $distance-from-line;
+        top: - $distance-from-line;
+
+        &::after {
+            bottom: $dot-adjustment;
+        }
+    }
+
+    li:nth-child(5) a {
+        padding-top: $distance-from-line;
+        top: $distance-from-line;
+
+        &::after {
+            top: $dot-adjustment;
+        }
+    }
+
+    li:nth-child(6) a {
+        padding-bottom: $distance-from-line;
+        top: - $distance-from-line;
+
+        &::after {
+            bottom: $dot-adjustment;
+        }
+    }
+
+    li:nth-child(7) a {
+        padding-top: $distance-from-line;
+        top: $distance-from-line;
+
+        &::after {
+            top: $dot-adjustment;
+        }
+    }
+}
+
+.header-wrapper {
+
+    // Dots on timeline 
+    a::after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        height: 30px;
+        left: 22%;
+        aspect-ratio: 1 / 1;
+        border-radius: 100%;
+        background-color: $dark-color;
+        transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+        border: 5px solid $higlight-color;
+    }
+
+    a:hover::after {
+        transform: scale(1.2);
+    }
+
+
 }
