@@ -1,0 +1,9 @@
+/* CSS Reset */
+
+
+/* Base CSS */
+@import 'components/mobile';
+
+@media screen and (min-width: 768px) {
+    @import 'components/desktop';   
+}
