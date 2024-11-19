@@ -25,6 +25,7 @@ Ska vi enas om plugin i VS code?
 Vi skriver stylesheets i sass 
 Commits med med gitmoji? if applied this will.. 
 Kommentarer och commits på Engelska 
+Sprint period 1 vecka
 
 ## Namnkonventioner
 Använda bindesstreck
