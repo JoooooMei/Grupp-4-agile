@@ -1,9 +1,9 @@
 body {
     @import 'components/mobile/mobile-header';
 
-    @import 'components/desktop/desktop-body';
+    @import 'components/mobile/mobile-body';
 
     @import 'components/mobile/mobile-cookie';
 
-    @import 'components/desktop/desktop-footer';
+    @import 'components/mobile/mobile-footer';
 }
