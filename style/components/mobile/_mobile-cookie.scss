@@ -1,3 +1,4 @@
+$max-width: 36rem;
 
 .cookie-banner {
     background-color: gray;
@@ -6,41 +7,37 @@
     position: fixed;
     bottom: 0;
     width: 100vw;
-    height: 10vh;
+    height: auto;
 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 
+    padding: 1rem;
+    gap: 0.5rem;
+
+    h2 {
+        text-align: center;
+    }
+
     p {
-        flex: 5;
-        margin: 0;
-        padding-left: 5vw;
-        padding-right: 5vw;
-        height: 100%;
-        align-content: center;
+        padding-block: 0.5rem;
+        text-align: left;
+        max-width: $max-width;
     }
 
     .cookie-buttons {
-        flex: 4;
         display: flex;
-        gap: 30px;
-        justify-content: center;
-
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        max-width: $max-width;
+        
         .button {
-            font-size: 2rem;
-            font-weight: 700;
-            border-radius: 10px;
-            border: none;
-            height: 3rem;
-            width: 15vw;
-            color: white;
-            text-transform: uppercase;
+            width: 80vw;
+            max-width: $max-width - 2rem;
         }
 
-
-        .decline-button {
-            margin-right: 30px;
-        }
     }
+
 }
