@@ -1,5 +1,8 @@
 // ********* Menu Desktop *********
+$higlight-color: #f7941a;
+$dark-color: #4d4d4d;
 
+$base-font: system-ui;
 // Dimentions Desktop
 $page-margin: 3rem; // Set minimum outer margin of page
 $page-max-width: 1400px; // Set max width of page 
@@ -7,6 +10,8 @@ $menu-height: 120px; // Set height of the header
 $nav-width: 800px; // Set width of desktop menu 
 
 header {
+    display: flex;
+    justify-content: center;
     padding-inline: $page-margin;
     height: $menu-height;
     background-color: $higlight-color;
