@@ -1,34 +1,41 @@
 // ********* Variables *********
 
 $higlight-color: #f7941a00;
-$dark-color: #00000000;
+$dark-color: #000000;
 
 $base-font: system-ui;
 
 
 // ********* RESET CSS (Probalby delete later)  ********* 
 html {
-    overflow-x: hidden;
+    overflow-x: hidden; // Hides overflow when mobile menu is hidden 
 }
 
-header {
 
-    font-family: $base-font;
+*,
+*::before,
+*::after {
+
+    // font-family: $base-font;
+    // outline: 2px solid lime;
+    box-sizing: border-box;
 
 
-    *,
-    *::before,
-    *::after {
-        outline: 2px solid lime;
-        box-sizing: border-box;
-    }
+}
+
+header,
+header *,
+*::before,
+*::after {
+    outline: 2px solid lime;
+    box-sizing: border-box;
 }
 
 // ********* Menu Mobile *********
 // Dimentions Mobile
 $page-margin: 2rem; // Set minimum outer margin of page
 $page-max-width: 100%; // Set max width of page 
-$header-height: 120px;
+$header-height: 80px;
 $nav-height: 100vh; // Set height of the menu slide in
 $menu-height: 70%; // Set height of menu items 
 $timline-width: 2px; // Set width of timeline
@@ -37,14 +44,20 @@ $dot-border: 5px; // adjust the border on dots => border timline
 
 
 header {
-    position: fixed;
     display: flex;
+    position: sticky;
+    top: 0;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     background-color: $higlight-color;
     height: $header-height;
     padding-inline: $page-margin;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 // Remember! Nav slides in when burger button pressed
@@ -57,7 +70,7 @@ nav {
     width: 100%;
     background-color: $higlight-color;
     height: $nav-height;
-    transform: translateX(calc(20% - $page-margin)); // 0% covers entire screen and 100% hides menu
+    transform: translateX(calc(100% - $page-margin)); // 0% covers entire screen and 100% hides menu
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 
     .timeline-wrapper {

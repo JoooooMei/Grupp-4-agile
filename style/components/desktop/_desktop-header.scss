@@ -33,6 +33,10 @@ header {
     width: 100%;
     max-width: $page-max-width;
 
+    button {
+        display: none;
+    }
+
     nav {
         position: relative;
         width: $nav-width;
