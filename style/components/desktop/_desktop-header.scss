@@ -1,17 +1,21 @@
 // ********* Menu Desktop *********
-$higlight-color: #f7941a;
-$dark-color: #000000;
+$higlight-color: #f7941a00;
+$dark-color: #00000000;
 
 $base-font: system-ui;
 // Dimentions Desktop
 $page-margin: 3rem; // Set minimum outer margin of page
 $page-max-width: 1400px; // Set max width of page 
+
+// Menu settings 
 $menu-height: 120px; // Set height of the header 
 $nav-width: 700px; // Set width of desktop menu 
 
+$dot-size: 30px; // adjust dot size on menu timleline
+$dot-border: 5px; // adjust the border on dots => border timline
+
 header {
     display: flex;
-    position: fixed;
     top: 0;
     align-items: center;
     padding-inline: $page-margin;
@@ -39,6 +43,23 @@ header {
         transform: translateX(0%);
     }
 
+    .timeline-wrapper {
+        display: flex;
+        position: absolute;
+        left: 0px;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+
+        .timeline {
+            height: 0px;
+            width: calc(100% - 25px);
+            border: 2px solid $dark-color;
+            border-radius: 2px;
+        }
+    }
+
     ul {
         display: flex;
         flex-direction: row;
@@ -51,12 +72,7 @@ header {
         padding: 0;
 
         * {
-            // Edit main menu styles here
             position: relative;
-            text-decoration: none;
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: inherit;
         }
     }
 
@@ -65,35 +81,18 @@ header {
     }
 }
 
-.timeline-wrapper {
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-
-    .timeline {
-        height: 0px !important; // Fix !important later 
-        width: calc(100% - 25px);
-        border: 2px solid $dark-color;
-        border-radius: 2px;
-    }
-}
-
-
-// Adjust position menu items 
+// Adjust position menu list-items 
 
 nav {
     // Edit theese variables to adjust positions in alternating menu items.
-    $distance-from-line: 30px;
-    $dot-adjustment: -3px;
+    $offset-from-line: $dot-size; // Adjust list-item offset from timeline in menu  
+    $dot-adjustment: - calc($dot-border / 2); // correct position of dots (the border of dots divided by 2)
 
     height: auto;
 
     li:nth-child(1) a {
-        padding-top: $distance-from-line;
-        top: $distance-from-line;
+        padding-top: $offset-from-line;
+        top: $offset-from-line;
 
         &::after {
             top: $dot-adjustment;
@@ -101,8 +100,8 @@ nav {
     }
 
     li:nth-child(2) a {
-        padding-bottom: $distance-from-line;
-        top: - $distance-from-line;
+        padding-bottom: $offset-from-line;
+        top: - $offset-from-line;
 
         &::after {
             bottom: $dot-adjustment;
@@ -110,8 +109,8 @@ nav {
     }
 
     li:nth-child(3) a {
-        padding-top: $distance-from-line;
-        top: $distance-from-line;
+        padding-top: $offset-from-line;
+        top: $offset-from-line;
 
         &::after {
             top: $dot-adjustment;
@@ -119,8 +118,8 @@ nav {
     }
 
     li:nth-child(4) a {
-        padding-bottom: $distance-from-line;
-        top: - $distance-from-line;
+        padding-bottom: $offset-from-line;
+        top: - $offset-from-line;
 
         &::after {
             bottom: $dot-adjustment;
@@ -128,8 +127,8 @@ nav {
     }
 
     li:nth-child(5) a {
-        padding-top: $distance-from-line;
-        top: $distance-from-line;
+        padding-top: $offset-from-line;
+        top: $offset-from-line;
 
         &::after {
             top: $dot-adjustment;
@@ -137,8 +136,8 @@ nav {
     }
 
     li:nth-child(6) a {
-        padding-bottom: $distance-from-line;
-        top: - $distance-from-line;
+        padding-bottom: $offset-from-line;
+        top: - $offset-from-line;
 
         &::after {
             bottom: $dot-adjustment;
@@ -146,8 +145,8 @@ nav {
     }
 
     li:nth-child(7) a {
-        padding-top: $distance-from-line;
-        top: $distance-from-line;
+        padding-top: $offset-from-line;
+        top: $offset-from-line;
 
         &::after {
             top: $dot-adjustment;
@@ -162,13 +161,14 @@ nav {
         content: '';
         display: inline-block;
         position: absolute;
-        height: 30px;
+        height: $dot-size;
+        width: $dot-size;
         left: 22%;
         aspect-ratio: 1 / 1;
         border-radius: 100%;
         background-color: $dark-color;
         transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
-        border: 5px solid $higlight-color;
+        border: $dot-border solid $higlight-color;
     }
 
     a:hover::after {

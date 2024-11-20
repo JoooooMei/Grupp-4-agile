@@ -1,16 +1,20 @@
 // ********* Variables *********
 
-$higlight-color: #f7941a;
-$dark-color: #000000;
+$higlight-color: #f7941a00;
+$dark-color: #00000000;
 
 $base-font: system-ui;
 
 
 // ********* RESET CSS (Probalby delete later)  ********* 
+html {
+    overflow-x: hidden;
+}
 
 header {
+
     font-family: $base-font;
-    // overflow-x: hidden;
+
 
     *,
     *::before,
@@ -25,31 +29,52 @@ header {
 $page-margin: 2rem; // Set minimum outer margin of page
 $page-max-width: 100%; // Set max width of page 
 $header-height: 120px;
-$nav-height: calc(100svh - $header-height); // Set height of the menu slide in
+$nav-height: 100vh; // Set height of the menu slide in
 $menu-height: 70%; // Set height of menu items 
+$timline-width: 2px; // Set width of timeline
+$dot-size: 30px; // adjust dot size on menu timleline
+$dot-border: 5px; // adjust the border on dots => border timline
 
 
 header {
-    position: relative;
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     background-color: $higlight-color;
     height: $header-height;
+    padding-inline: $page-margin;
 }
 
 // Remember! Nav slides in when burger button pressed
 nav {
     display: flex;
     position: absolute;
-    top: $header-height;
+    top: 0;
     justify-content: center;
     align-items: center;
     width: 100%;
     background-color: $higlight-color;
     height: $nav-height;
-    transform: translateX(0%);
+    transform: translateX(calc(20% - $page-margin)); // 0% covers entire screen and 100% hides menu
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+    .timeline-wrapper {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 20%; // adjust horizontal position here 
+        justify-content: center;
+        height: 100%;
+        // width: 100%;
+
+        .timeline {
+            height: calc($menu-height - 25px);
+            border: $timline-width solid $dark-color;
+            border-radius: 2px;
+        }
+    }
 
     ul {
         display: flex;
@@ -60,47 +85,37 @@ nav {
         height: 80%;
         height: $menu-height;
         justify-content: space-between;
-    }
 
-    .timeline-wrapper {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width: 100%;
-
-        .timeline {
-            height: calc($menu-height - 25px);
-            border: 2px solid $dark-color;
-            border-radius: 2px;
+        * {
+            // Edit main menu styles here
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: inherit;
         }
+
+        // ********* Dots on timeline *********
+        a::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            height: $dot-size;
+            width: $dot-size;
+            left: calc(20% - (#{$dot-size} / 2) + $timline-width);
+            aspect-ratio: 1 / 1;
+            border-radius: 100%;
+            background-color: $dark-color;
+            transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+            border: 5px solid $higlight-color;
+        }
+
+        a:hover::after {
+            transform: scale(1.2);
+        }
+
     }
 
 
-}
-
-// ********* Dots on timeline *********
-.header-wrapper {
-
-    // Dots on timeline 
-    a::after {
-        content: '';
-        display: inline-block;
-        position: absolute;
-        height: 30px;
-        left: 22%;
-        aspect-ratio: 1 / 1;
-        border-radius: 100%;
-        background-color: $dark-color;
-        transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
-        border: 5px solid $higlight-color;
-    }
-
-    a:hover::after {
-        transform: scale(1.2);
-    }
 
 
 }
