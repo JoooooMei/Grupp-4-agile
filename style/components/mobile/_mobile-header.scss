@@ -1,18 +1,16 @@
 // ********* Variables *********
 
 $higlight-color: #f7941a;
-$dark-color: #4d4d4d;
+$dark-color: #000000;
 
 $base-font: system-ui;
 
 
 // ********* RESET CSS (Probalby delete later)  ********* 
 
-body {
-    padding: 0;
-    margin: 0;
+header {
     font-family: $base-font;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 
     *,
     *::before,
@@ -28,7 +26,7 @@ $page-margin: 2rem; // Set minimum outer margin of page
 $page-max-width: 100%; // Set max width of page 
 $header-height: 120px;
 $nav-height: calc(100svh - $header-height); // Set height of the menu slide in
-$menu-height: 600px; // Set height of menu items 
+$menu-height: 70%; // Set height of menu items 
 
 
 header {
@@ -51,6 +49,7 @@ nav {
     width: 100%;
     background-color: $higlight-color;
     height: $nav-height;
+    transform: translateX(0%);
 
     ul {
         display: flex;
@@ -77,6 +76,30 @@ nav {
             border: 2px solid $dark-color;
             border-radius: 2px;
         }
+    }
+
+
+}
+
+// ********* Dots on timeline *********
+.header-wrapper {
+
+    // Dots on timeline 
+    a::after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        height: 30px;
+        left: 22%;
+        aspect-ratio: 1 / 1;
+        border-radius: 100%;
+        background-color: $dark-color;
+        transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+        border: 5px solid $higlight-color;
+    }
+
+    a:hover::after {
+        transform: scale(1.2);
     }
 
 
