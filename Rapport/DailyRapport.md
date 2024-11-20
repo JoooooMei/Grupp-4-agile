@@ -35,3 +35,33 @@ Creating a sprint planning.
 Learned to create issues in sprint planning.
 
 
+
+
+======================================================
+
+
+## 11/20/24
+
+__________________________________________________
+# What did we accomplish?
+
+David completed writing 'WriteCopy'.
+Hannes created a frame for the body of the site (desktop).
+Mansoor created the cookie banner. Did a hot-fix in the CSS.
+Johan did the header (desktop). Things left to do on mobile.
+
+
+__________________________________________________
+
+# What is our goal?
+
+David will do footer (mobile)
+Hannes will start on the body (mobile)
+Mansoor looking to do structure to media query
+Johan finishing the header
+
+__________________________________________________
+
+# Team Summary:
+
+
