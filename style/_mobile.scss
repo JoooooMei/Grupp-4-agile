@@ -1,17 +1,9 @@
 body {
-    header {
-        @import 'components/mobile/mobile-header';
-    }
+    @import 'components/desktop/desktop-header';
 
-    main {
-        @import 'components/mobile/mobile-body';
-    }
+    @import 'components/desktop/desktop-body';
 
-    .cookie-banner {
-        @import 'components/mobile/mobile-cookie';
-    }
+    @import 'components/mobile/mobile-cookie';
 
-    footer {
-        @import 'components/mobile/mobile-footer';
-    }
+    @import 'components/desktop/desktop-footer';
 }

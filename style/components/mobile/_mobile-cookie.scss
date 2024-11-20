@@ -1,0 +1,46 @@
+
+.cookie-banner {
+    background-color: gray;
+    color: black;
+
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 10vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        flex: 5;
+        margin: 0;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        height: 100%;
+        align-content: center;
+    }
+
+    .cookie-buttons {
+        flex: 4;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+
+        .button {
+            font-size: 2rem;
+            font-weight: 700;
+            border-radius: 10px;
+            border: none;
+            height: 3rem;
+            width: 15vw;
+            color: white;
+            text-transform: uppercase;
+        }
+
+
+        .decline-button {
+            margin-right: 30px;
+        }
+    }
+}
