@@ -1,0 +1,139 @@
+// ********* Menu Mobile Variables *********
+
+$page-margin: 2rem; // Set minimum outer margin of page
+$page-max-width: 100%; // Set max width of page 
+$header-height: 80px;
+$nav-height: 100vh; // Set height of the menu slide in
+$menu-height: 70%; // Set height of menu items 
+$timline-width: 2px; // Set width of timeline
+$dot-size: 30px; // adjust dot size on menu timleline
+$dot-border: 5px; // adjust the border on dots => border timline
+
+// ------------------------------------------ *** NOTE TO CODE REVIEWER *** -------------------------------------------------
+//
+// Mobile menu is hidden by deault. Change these variables to see the menu  
+//
+$show-menu: hidden; // for visible menu: flex;
+$slide-menu-to-wp: translateX(calc(100% - $page-margin)); // for visible menu: translateX(calc(0% - $page-margin));
+//
+//---------------------------------------------------------------------------------------------------------------------------
+
+// ********* Variables that should be deleted *********
+
+$higlight-color: #f7941a;
+$dark-color: #000000;
+
+$base-font: system-ui;
+
+
+// ********* RESET CSS (Probalby delete later)  ********* 
+html {
+    overflow-x: hidden; // Hides overflow when mobile menu is hidden 
+}
+
+*,
+*::before,
+*::after {
+    // font-family: $base-font;
+    // outline: 2px solid lime;
+    box-sizing: border-box;
+}
+
+header,
+header *,
+*::before,
+*::after {
+    outline: 2px solid lime;
+    box-sizing: border-box;
+}
+
+
+
+
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: $higlight-color;
+    height: $header-height;
+    padding-inline: $page-margin;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+// Remember! Nav slides in when burger button pressed
+nav {
+    display: $show-menu;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: $higlight-color;
+    height: $nav-height;
+    transform: $slide-menu-to-wp;
+
+    .timeline-wrapper {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 20%; // adjust horizontal position for timeline here 
+        justify-content: center;
+        height: 100%;
+
+        .timeline {
+            height: calc($menu-height - 25px);
+            border: $timline-width solid $dark-color;
+            border-radius: 2px;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        height: 80%;
+        height: $menu-height;
+        justify-content: space-between;
+
+        * {
+            // Edit main menu styles here
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: inherit;
+        }
+
+        // ********* Dots on timeline *********
+        a::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            height: $dot-size;
+            width: $dot-size;
+            left: calc(20% - (#{$dot-size} / 2) + $timline-width);
+            aspect-ratio: 1 / 1;
+            border-radius: 100%;
+            background-color: $dark-color;
+            transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+            border: 5px solid $higlight-color;
+        }
+
+        a:hover::after {
+            transform: scale(1.2);
+        }
+
+    }
+
+
+
+
+}
