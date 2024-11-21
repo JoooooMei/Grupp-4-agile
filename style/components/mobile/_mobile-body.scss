@@ -1,3 +1,4 @@
+
 .grid-container {
     /*    display: grid;
 
@@ -21,8 +22,18 @@
     align-items: center;
 
     div {
-        padding: 20px;
+        //padding: 20px;
         margin: auto;
+    }
+    /*[class*="text"]{
+    background-image: '../assets/images/test-bilder/bild2.jpg';
+    }*/
+    p {
+        padding: 20px;
+        //background-image: url('../assets/images/test-bilder/mobile-background.jpg');
+        width: 100%;
+        //z-index: 33;
+        //color: aliceblue;
     }
 
     .middle {
@@ -32,11 +43,12 @@
     .image {
         flex: 1;
         justify-self: stretch;
-        outline: 3px solid red;
+        //outline: 3px solid red;
         width: 100%;
     }
 
     .img1 {
+       
         background-color: lightgreen;
         order: 1;
     }
@@ -103,6 +115,7 @@
 img {
     margin: auto;
     border: 0;
-    border-radius: 3px;
+    border-radius: 10px;
+    padding: 5px 0;
 
 }
