@@ -1,12 +1,16 @@
 .grid-container {
-    grid-template-columns: 1fr;
-    div {
-        padding: 10px;
-    }
-    .middle {
+    display: grid;
+
+    .middle{
         display: none;
     }
-    .image {
-        order: 0;
-    };
+
+    div {
+        justify-self: center;
+        padding: 10px;
+    }
+    .img1 {
+        order: 1;
+    }
+
 }
