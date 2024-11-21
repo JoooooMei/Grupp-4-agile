@@ -95,4 +95,5 @@ __________________________________________________
 # Team Summary:
 
 We are keeping a good pace!
+![alt text](img/21-nov.png)
 
