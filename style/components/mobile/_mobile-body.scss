@@ -1,5 +1,6 @@
+
 .grid-container {
-    display: grid;
+/*    display: grid;
 
     .middle{
         display: none;
@@ -12,5 +13,30 @@
     .img1 {
         order: 1;
     }
+    div::nth-child(2){
+        order: 2;
+    }
+*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    div {
+        padding: 20px;
+        margin: auto;
+    }
+
+    .middle {
+        display: none;
+    }
+
+    .image {
+        flex: 1;
+        justify-self: stretch;
+        outline: 3px solid red;
+        margin-bottom: 20px;
+    }
+    .img1 {
+        background-color: lightgreen;
+    }
 }
