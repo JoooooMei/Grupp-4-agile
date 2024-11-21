@@ -13,7 +13,7 @@ $dot-border: 5px; // adjust the border on dots => border timline
 //
 // Mobile menu is hidden by deault. Change these variables to see the menu  
 //
-$show-menu: hidden; // for visible menu: flex;
+$show-menu: none; // for visible menu: flex;
 $slide-menu-to-wp: translateX(calc(100% - $page-margin)); // for visible menu: translateX(calc(0% - $page-margin));
 //
 //---------------------------------------------------------------------------------------------------------------------------
