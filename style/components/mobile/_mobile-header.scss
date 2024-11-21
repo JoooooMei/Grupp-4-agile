@@ -1,6 +1,26 @@
-// ********* Variables *********
+// ********* Menu Mobile Variables *********
 
-$higlight-color: #f7941a00;
+$page-margin: 2rem; // Set minimum outer margin of page
+$page-max-width: 100%; // Set max width of page 
+$header-height: 80px;
+$nav-height: 100vh; // Set height of the menu slide in
+$menu-height: 70%; // Set height of menu items 
+$timline-width: 2px; // Set width of timeline
+$dot-size: 30px; // adjust dot size on menu timleline
+$dot-border: 5px; // adjust the border on dots => border timline
+
+// ------------------------------------------ *** NOTE TO CODE REVIEWER *** -------------------------------------------------
+//
+// Mobile menu is hidden by deault. Change these variables to see the menu  
+//
+$show-menu: hidden; // for visible menu: flex;
+$slide-menu-to-wp: translateX(calc(100% - $page-margin)); // for visible menu: translateX(calc(0% - $page-margin));
+//
+//---------------------------------------------------------------------------------------------------------------------------
+
+// ********* Variables that should be deleted *********
+
+$higlight-color: #f7941a;
 $dark-color: #000000;
 
 $base-font: system-ui;
@@ -11,16 +31,12 @@ html {
     overflow-x: hidden; // Hides overflow when mobile menu is hidden 
 }
 
-
 *,
 *::before,
 *::after {
-
     // font-family: $base-font;
     // outline: 2px solid lime;
     box-sizing: border-box;
-
-
 }
 
 header,
@@ -31,16 +47,7 @@ header *,
     box-sizing: border-box;
 }
 
-// ********* Menu Mobile *********
-// Dimentions Mobile
-$page-margin: 2rem; // Set minimum outer margin of page
-$page-max-width: 100%; // Set max width of page 
-$header-height: 80px;
-$nav-height: 100vh; // Set height of the menu slide in
-$menu-height: 70%; // Set height of menu items 
-$timline-width: 2px; // Set width of timeline
-$dot-size: 30px; // adjust dot size on menu timleline
-$dot-border: 5px; // adjust the border on dots => border timline
+
 
 
 header {
@@ -62,7 +69,7 @@ header {
 
 // Remember! Nav slides in when burger button pressed
 nav {
-    display: flex;
+    display: $show-menu;
     position: absolute;
     top: 0;
     justify-content: center;
@@ -70,17 +77,15 @@ nav {
     width: 100%;
     background-color: $higlight-color;
     height: $nav-height;
-    transform: translateX(calc(100% - $page-margin)); // 0% covers entire screen and 100% hides menu
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transform: $slide-menu-to-wp;
 
     .timeline-wrapper {
         display: flex;
         flex-direction: column;
         position: absolute;
-        left: 20%; // adjust horizontal position here 
+        left: 20%; // adjust horizontal position for timeline here 
         justify-content: center;
         height: 100%;
-        // width: 100%;
 
         .timeline {
             height: calc($menu-height - 25px);

@@ -4,8 +4,8 @@ $dark-color: #00000000;
 
 $base-font: system-ui;
 // Dimentions Desktop
-$page-margin: 3rem; // Set minimum outer margin of page
-$page-max-width: 1400px; // Set max width of page 
+$page-margin: 3rem; // Set minimum outer margin of page (in this case header)
+$page-max-width: 1400px; // Set max width of page (in this case header)
 
 // Menu settings 
 $menu-height: 120px; // Set height of the header 
@@ -38,6 +38,7 @@ header {
     }
 
     nav {
+        display: block;
         position: relative;
         width: $nav-width;
         margin-left: auto;
@@ -45,6 +46,75 @@ header {
         padding: 0;
         top: 0;
         transform: translateX(0%);
+
+        // Edit theese variables to adjust positions in alternating menu items.
+        $offset-from-line: $dot-size; // Adjust list-item offset from timeline in menu  
+        $dot-adjustment: - calc($dot-border / 2); // correct position of dots (the border of dots divided by 2)
+
+        height: auto;
+
+        li:nth-child(1) a {
+            padding-top: $offset-from-line;
+            top: $offset-from-line;
+
+            &::after {
+                top: $dot-adjustment;
+            }
+        }
+
+        li:nth-child(2) a {
+            padding-bottom: $offset-from-line;
+            top: - $offset-from-line;
+
+            &::after {
+                bottom: $dot-adjustment;
+            }
+        }
+
+        li:nth-child(3) a {
+            padding-top: $offset-from-line;
+            top: $offset-from-line;
+
+            &::after {
+                top: $dot-adjustment;
+            }
+        }
+
+        li:nth-child(4) a {
+            padding-bottom: $offset-from-line;
+            top: - $offset-from-line;
+
+            &::after {
+                bottom: $dot-adjustment;
+            }
+        }
+
+        li:nth-child(5) a {
+            padding-top: $offset-from-line;
+            top: $offset-from-line;
+
+            &::after {
+                top: $dot-adjustment;
+            }
+        }
+
+        li:nth-child(6) a {
+            padding-bottom: $offset-from-line;
+            top: - $offset-from-line;
+
+            &::after {
+                bottom: $dot-adjustment;
+            }
+        }
+
+        li:nth-child(7) a {
+            padding-top: $offset-from-line;
+            top: $offset-from-line;
+
+            &::after {
+                top: $dot-adjustment;
+            }
+        }
     }
 
     .timeline-wrapper {
@@ -87,76 +157,7 @@ header {
 
 // Adjust position menu list-items 
 
-nav {
-    // Edit theese variables to adjust positions in alternating menu items.
-    $offset-from-line: $dot-size; // Adjust list-item offset from timeline in menu  
-    $dot-adjustment: - calc($dot-border / 2); // correct position of dots (the border of dots divided by 2)
-
-    height: auto;
-
-    li:nth-child(1) a {
-        padding-top: $offset-from-line;
-        top: $offset-from-line;
-
-        &::after {
-            top: $dot-adjustment;
-        }
-    }
-
-    li:nth-child(2) a {
-        padding-bottom: $offset-from-line;
-        top: - $offset-from-line;
-
-        &::after {
-            bottom: $dot-adjustment;
-        }
-    }
-
-    li:nth-child(3) a {
-        padding-top: $offset-from-line;
-        top: $offset-from-line;
-
-        &::after {
-            top: $dot-adjustment;
-        }
-    }
-
-    li:nth-child(4) a {
-        padding-bottom: $offset-from-line;
-        top: - $offset-from-line;
-
-        &::after {
-            bottom: $dot-adjustment;
-        }
-    }
-
-    li:nth-child(5) a {
-        padding-top: $offset-from-line;
-        top: $offset-from-line;
-
-        &::after {
-            top: $dot-adjustment;
-        }
-    }
-
-    li:nth-child(6) a {
-        padding-bottom: $offset-from-line;
-        top: - $offset-from-line;
-
-        &::after {
-            bottom: $dot-adjustment;
-        }
-    }
-
-    li:nth-child(7) a {
-        padding-top: $offset-from-line;
-        top: $offset-from-line;
-
-        &::after {
-            top: $dot-adjustment;
-        }
-    }
-}
+nav {}
 
 .header-wrapper {
 
