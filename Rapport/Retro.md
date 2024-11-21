@@ -2,6 +2,8 @@
 
 _____________________________________________
 
+Göra i Miro?
+
 # Emotional Evaluation (Glad, Sad, Mad)
 (Happens at the end of each sprint)
 

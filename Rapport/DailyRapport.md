@@ -65,3 +65,34 @@ __________________________________________________
 # Team Summary:
 
 
+
+=============================================================
+
+## 11/21/24
+
+__________________________________________________
+# What did we accomplish?
+
+David completed a basic footer (mobile)
+Hannes created a branch for body (mobile)
+Mansoor - chilling
+Johan header completed (mobile + desktop)
+
+
+__________________________________________________
+
+# What is our goal?
+
+David improving the SASS for the footer (mobile)
+Hannes improving on the main body
+Johan creating a pull request
+Mansoor doing a code review on the pull request
+
+
+
+__________________________________________________
+
+# Team Summary:
+
+We are keeping a good pace!
+
