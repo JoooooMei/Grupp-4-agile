@@ -10,16 +10,12 @@ footer {
   .footer-container {
     max-width: $max-width;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
     gap: 20px;
-    flex-wrap: wrap; // Ensure items wrap in smaller screens
     padding: 0 20px;
   }
 
   // Footer section style
   .footer-section {
-    flex: 1;
     padding: 10px;
     
     h3 {
