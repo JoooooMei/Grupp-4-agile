@@ -1,3 +1,9 @@
+/**,
+*::after,
+*::before {
+    outline: 3px solid blue;
+}*/
+
 main{
     margin-top: 100px;
 }
@@ -35,7 +41,7 @@ main{
     }
 
     .img1 {
-        background-color: v.$test; 
+        background-color: lightgreen; 
         border: 5px solid rgb(133, 51, 126);
     
 
@@ -60,5 +66,5 @@ main{
 img {
     margin: auto;
     border: 0;
-    border-radius: 5px;
+    border-radius: 5px;        
 }
