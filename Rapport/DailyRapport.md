@@ -97,3 +97,33 @@ __________________________________________________
 We are keeping a good pace!
 ![alt text](img/21-nov.png)
 
+
+
+=============================================================
+
+## 11/22/24
+
+__________________________________________________
+# What did we accomplish?
+
+David chilling.
+Hannes finished doing the main body
+Johan chillin. Did a pull request and merge
+Mansoor research on git branch optimization
+
+Everybody did a code review (pull request)
+
+
+__________________________________________________
+
+# What is our goal?
+
+Today will be improving the SASS for the footer (mobile)
+Code review on Hannes' code.
+Going to do our retro.
+
+
+
+![alt text](img/22-nov.png)
+
+__________________________________________________
