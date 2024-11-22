@@ -1,8 +1,8 @@
-/**,
+*,
 *::after,
 *::before {
-    outline: 3px solid blue;
-}*/
+    outline: 3px solid yellow;
+}
 
 main{
     margin-top: 100px;
@@ -20,6 +20,9 @@ main{
         justify-self: start;
         // border: 2px solid green;
         padding: 10px;
+    }
+    p {
+        padding: 20px;
     }
 
     .middle {
@@ -58,6 +61,12 @@ main{
     .img4 {
         background-color: cornflowerblue;
         border: 5px solid yellowgreen;
+    }
+    .img5 {
+        background-color: rgb(124, 124, 34);
+    }
+    .img6 {
+        background-color: orangered;
     }
 
 
