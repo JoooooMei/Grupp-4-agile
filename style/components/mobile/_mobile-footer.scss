@@ -17,4 +17,40 @@ footer {
     padding: 0 20px;
   }
 
+  // Footer section style
+  .footer-section {
+    flex: 1;
+    padding: 10px;
+    
+    h3 {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+      color: #ffbb00;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 10px;
+
+        a {
+          text-decoration: none;
+          color: white;
+          transition: color 0.3s;
+
+          &:hover {
+            color: #ffbb00;
+          }
+        }
+      }
+    }
+  }
+
+
 }
