@@ -65,3 +65,31 @@ __________________________________________________
 # Team Summary:
 
 
+======================================================
+
+
+## 11/25/24
+
+__________________________________________________
+# What did we accomplish?
+
+David completed footer (desktop/mobile)
+Hannes problem-shooting media-queries
+Johan did fixes on Hannes' code
+Mansoor did trouble-shooting and code-review
+
+
+__________________________________________________
+
+# What is our goal?
+
+Make a new sprint-planning.
+Merging the footer.
+Create a DEV branch.
+Exchanging the divs for semantic syntax
+
+
+
+__________________________________________________
+
+# Team Summary:
