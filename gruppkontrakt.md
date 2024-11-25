@@ -38,6 +38,10 @@ Mobile first
 
 Max width body 1400px 
 
+## Scrum-master
+Vecka 1: David
+Vecka 2: Hannes / Johan
+Vecka 3: Mansoor
 
 ## Underskrifter
 Johan Meisel

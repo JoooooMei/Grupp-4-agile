@@ -65,7 +65,69 @@ __________________________________________________
 # Team Summary:
 
 
-======================================================
+
+=============================================================
+
+## 11/21/24
+
+__________________________________________________
+# What did we accomplish?
+
+David completed a basic footer (mobile)
+Hannes created a branch for body (mobile)
+Mansoor - chilling
+Johan header completed (mobile + desktop)
+
+
+__________________________________________________
+
+# What is our goal?
+
+David improving the SASS for the footer (mobile)
+Hannes improving on the main body
+Johan creating a pull request
+Mansoor doing a code review on the pull request
+
+
+
+__________________________________________________
+
+# Team Summary:
+
+We are keeping a good pace!
+![alt text](img/21-nov.png)
+
+
+
+=============================================================
+
+## 11/22/24
+
+__________________________________________________
+# What did we accomplish?
+
+David chilling.
+Hannes finished doing the main body
+Johan chillin. Did a pull request and merge
+Mansoor research on git branch optimization
+
+Everybody did a code review (pull request)
+
+
+__________________________________________________
+
+# What is our goal?
+
+Today will be improving the SASS for the footer (mobile)
+Code review on Hannes' code.
+Going to do our retro.
+
+
+
+![alt text](img/22-nov.png)
+
+__________________________________________________
+
 
 
 ## 11/25/24
@@ -93,3 +155,6 @@ Exchanging the divs for semantic syntax
 __________________________________________________
 
 # Team Summary:
+
+
+![alt text](img/25-nov.png)

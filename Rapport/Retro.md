@@ -1,23 +1,44 @@
-## 11/25/24
+## 11/22/24
 
 _____________________________________________
+
 
 # Emotional Evaluation (Glad, Sad, Mad)
 (Happens at the end of each sprint)
 
 Johan:
-    Glad:
-    Sad:
-    Mad:
+    Glad: Happy for great teamwork. Having learned many things from the group members.
+    Sad: Falling behind with work outside of the Agile project.
+    Mad: -----
 Hannes:
-    Glad:
-    Sad:
-    Mad:
+    Glad: Pain-free development of Agile project. Moving forward with ease.
+    Sad: That the project is too short. Should be longer!
+    Mad: ...
 Mansoor:
-    Glad:
-    Sad:
-    Mad:
+    Glad: Team-work makes the world move around. Same as above!
+    Sad: Winter is coming.
+    Mad: ---
 David:
-    Glad:
-    Sad:
-    Mad:
+    Glad: Great team-work. Loving life. Loving the project.
+    Sad: Not having done as much work on the footer as I'd wish.
+    Mad: ...
+
+
+# What have we learned from this sprint?
+
+Branching. Merging. Pull request. Basic merge conflict handling.
+
+How to structure a project.
+
+How to think in terms of Agile team development.
+
+David learned Sass.
+
+# What can we improve for next sprint?
+
+Add an 'in-review' column to the planning poker.
+
+Creating a development branch.
+
+Creating global variables.
+

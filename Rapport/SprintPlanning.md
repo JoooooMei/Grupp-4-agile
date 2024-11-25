@@ -21,21 +21,19 @@ Define the tasks:
     Validation ()
     Write copy (3)
 
-# ==============================================================0
+# =====================================================
+
 
 ## 11/25/24
 _____________________________________________
 
-# Sprint Duration
-
-
 One week
 
-All the tasks are in the to-do column
+All the tasks are in the current-sprint column
 We have defined each task
 We have estimated the time for each task
 We have assigned the tasks related to the current sprint
 
+Cleaned up backlog by removing redundant tasks and redefining tasks
 
-Doing sprint planning.
-Define the tasks:
+![Sprintplanning](img/25-nov-sprint.png)
