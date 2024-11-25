@@ -20,3 +20,17 @@ Define the tasks:
     Create cookie banner (5)
     Validation ()
     Write copy (3)
+
+# =====================================================
+
+
+## 11/25/24
+_____________________________________________
+
+# Sprint Duration
+
+
+
+
+
+# Define the tasks:
