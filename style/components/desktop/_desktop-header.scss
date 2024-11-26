@@ -1,11 +1,10 @@
 // ********* Menu Desktop *********
-$higlight-color: #f7941a00;
-$dark-color: #00000000;
+
 
 $base-font: system-ui;
 // Dimentions Desktop
 $page-margin: 3rem; // Set minimum outer margin of page (in this case header)
-$page-max-width: 1400px; // Set max width of page (in this case header)
+// $page-max-width: 1400px; // Set max width of page (in this case header)
 
 // Menu settings 
 $menu-height: 120px; // Set height of the header 
@@ -18,10 +17,10 @@ header {
     display: flex;
     top: 0;
     align-items: center;
-    padding-inline: $page-margin;
+    padding-inline: v.$page-margin;
     height: $menu-height;
-    background-color: $higlight-color;
-    font-family: $base-font;
+    background-color: v.$higlight-color;
+    font-family: v.$base-font;
 }
 
 .header-wrapper {
@@ -31,7 +30,7 @@ header {
     align-items: center;
     height: 100%;
     width: 100%;
-    max-width: $page-max-width;
+    max-width: v.$page-max-width;
 
     button {
         display: none;
@@ -129,7 +128,7 @@ header {
         .timeline {
             height: 0px;
             width: calc(100% - 25px);
-            border: 2px solid $dark-color;
+            border: 2px solid v.$dark-color;
             border-radius: 2px;
         }
     }
@@ -171,9 +170,9 @@ nav {}
         left: 22%;
         aspect-ratio: 1 / 1;
         border-radius: 100%;
-        background-color: $dark-color;
+        background-color: v.$dark-color;
         transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
-        border: $dot-border solid $higlight-color;
+        border: $dot-border solid v.$higlight-color;
     }
 
     a:hover::after {

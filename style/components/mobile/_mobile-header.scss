@@ -18,10 +18,6 @@ $slide-menu-to-wp: translateX(calc(100% - $page-margin)); // for visible menu: t
 //
 //---------------------------------------------------------------------------------------------------------------------------
 
-// ********* Variables that should be deleted *********
-
-$higlight-color: #f7941a;
-$dark-color: #000000;
 
 $base-font: system-ui;
 
@@ -57,9 +53,9 @@ header {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    background-color: $higlight-color;
+    background-color: v.$higlight-color;
     height: $header-height;
-    padding-inline: $page-margin;
+    padding-inline: v.$page-margin;
 }
 
 .header-wrapper {
@@ -75,7 +71,7 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: $higlight-color;
+    background-color: v.$higlight-color;
     height: $nav-height;
     transform: $slide-menu-to-wp;
 
@@ -89,7 +85,7 @@ nav {
 
         .timeline {
             height: calc($menu-height - 25px);
-            border: $timline-width solid $dark-color;
+            border: $timline-width solid v.$dark-color;
             border-radius: 2px;
         }
     }
@@ -122,9 +118,9 @@ nav {
             left: calc(20% - (#{$dot-size} / 2) + $timline-width);
             aspect-ratio: 1 / 1;
             border-radius: 100%;
-            background-color: $dark-color;
+            background-color: v.$dark-color;
             transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
-            border: 5px solid $higlight-color;
+            border: 5px solid v.$higlight-color;
         }
 
         a:hover::after {
