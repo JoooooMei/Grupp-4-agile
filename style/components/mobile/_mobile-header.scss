@@ -14,12 +14,9 @@ $dot-border: 5px; // adjust the border on dots => border timline
 // Mobile menu is hidden by deault. Change these variables to see the menu  
 //
 $show-menu: none; // for visible menu: flex;
-$slide-menu-to-wp: translateX(calc(100% - $page-margin)); // for visible menu: translateX(calc(0% - $page-margin));
+$slide-menu-to-wp: translateX(calc(20% - $page-margin)); // for visible menu: translateX(calc(0% - $page-margin));
 //
 //---------------------------------------------------------------------------------------------------------------------------
-
-
-$base-font: system-ui;
 
 
 // ********* RESET CSS (Probalby delete later)  ********* 
@@ -27,23 +24,14 @@ html {
     overflow-x: hidden; // Hides overflow when mobile menu is hidden 
 }
 
-*,
-*::before,
-*::after {
-    // font-family: $base-font;
-    // outline: 2px solid lime;
-    box-sizing: border-box;
-}
-
-header,
-header *,
-*::before,
-*::after {
-    outline: 2px solid lime;
-    box-sizing: border-box;
-}
-
-
+// ******* Outlines for dev *******
+// header,
+// header *,
+// *::before,
+// *::after {
+//     outline: 2px solid lime;
+//     box-sizing: border-box;
+// }
 
 
 header {

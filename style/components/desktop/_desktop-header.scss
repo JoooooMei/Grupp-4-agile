@@ -1,7 +1,5 @@
 // ********* Menu Desktop *********
 
-
-$base-font: system-ui;
 // Dimentions Desktop
 $page-margin: 3rem; // Set minimum outer margin of page (in this case header)
 // $page-max-width: 1400px; // Set max width of page (in this case header)
@@ -17,10 +15,9 @@ header {
     display: flex;
     top: 0;
     align-items: center;
-    padding-inline: v.$page-margin;
+    padding-inline: v.$d-page-margin;
     height: $menu-height;
     background-color: v.$higlight-color;
-    font-family: v.$base-font;
 }
 
 .header-wrapper {
@@ -30,7 +27,7 @@ header {
     align-items: center;
     height: 100%;
     width: 100%;
-    max-width: v.$page-max-width;
+    max-width: v.$d-page-max-width;
 
     button {
         display: none;
