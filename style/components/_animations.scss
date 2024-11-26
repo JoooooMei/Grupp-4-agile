@@ -1,0 +1,17 @@
+
+@mixin button-spin {
+    animation-duration: 3s;
+    animation-name: spin;
+
+}
+
+@keyframes spin {
+    0% {
+
+    }
+
+    100%{
+        transform: rotate(360deg);
+        border-radius: 100%;
+    }
+}
