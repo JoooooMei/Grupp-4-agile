@@ -5,11 +5,17 @@ $dark-color: #000000;
 $bright-color: #ffffff;
 
 $base-font: system-ui;
-$display-font: system-ui;
+$display-font: system-ui, sans-serif;
 
 $page-max-width: 100%;
 $page-margin: 1rem;
 $gap: 3rem;
+
+*,
+*::before,
+*::after {
+    font-family: $base-font;
+}
 
 
 // ********** Desktop only variables **********
