@@ -1,25 +1,6 @@
 @media screen and (max-width: 768px) {
 
     .grid-container {
-        /*    display: grid;
-
-    .middle{
-        display: none;
-    }
-
-    div {
-        justify-self: center;
-        padding: 10px;
-    }
-    .img1 {
-        order: 1;
-    }
-    div::nth-child(2){
-        order: 2;
-    }
-*/
-
-//        background-image: url('../assets/images/test-bilder/mobile-background.jpg');
 
         display: flex;
         flex-direction: column;
