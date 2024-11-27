@@ -4,15 +4,16 @@
 
 // Menu settings 
 $menu-height: 120px; // Set height of the header 
-$nav-width: 700px; // Set width of desktop menu 
+$nav-width: 550px; // Set width of desktop menu 
 
-$dot-size: 30px; // adjust dot size on menu timleline
-$dot-border: 5px; // adjust the border on dots => border timline
+$dot-size: 22px; // adjust dot size on menu timleline
+$dot-border: 3px; // adjust the border on dots => border timline
 
 header {
     display: flex;
     top: 0;
     align-items: center;
+    overflow-x: hidden;
     padding-inline: v.$d-page-margin;
     height: $menu-height;
     background-color: v.$higlight-color;
@@ -31,7 +32,8 @@ header {
         display: none;
     }
 
-    nav {
+    .primary-navigation {
+        background-color: transparent;
         display: block;
         position: relative;
         width: $nav-width;
@@ -41,11 +43,11 @@ header {
         top: 0;
         transform: translateX(0%);
         height: auto;
+
+        // ***** Alternating offset menu items *****
         // Edit theese variables to adjust positions in alternating menu items.
-        $offset-from-line: $dot-size; // Adjust list-item offset from timeline in menu  
-        $dot-adjustment: - calc($dot-border / 2); // correct position of dots (the border of dots divided by 2)
-
-
+        $offset-from-line: 25px; // Adjust list-item offset from timeline in menu  
+        $dot-adjustment: 0px; // Vertical dot adjustment
 
         li:nth-child(1) a {
             padding-top: $offset-from-line;
@@ -115,14 +117,14 @@ header {
         display: flex;
         position: absolute;
         left: 0px;
-        align-items: center;
+        align-items: left;
         justify-content: center;
         height: 100%;
         width: 100%;
 
         .timeline {
             height: 0px;
-            width: calc(100% - 25px);
+            width: 300%;
             border: 2px solid v.$dark-color;
             border-radius: 2px;
         }
@@ -145,12 +147,14 @@ header {
 
         // Dots on timeline 
         a::after {
+            // Adjust dots horizontal position 
+            $horizontal-pos: 28%;
             content: '';
             display: inline-block;
             position: absolute;
             height: $dot-size;
             width: $dot-size;
-            left: 22%;
+            left: $horizontal-pos;
             aspect-ratio: 1 / 1;
             border-radius: 100%;
             background-color: v.$dark-color;
@@ -158,9 +162,7 @@ header {
             border: $dot-border solid v.$higlight-color;
         }
 
-        a:hover::after {
-            transform: scale(1.2);
-        }
+
     }
 
     .logo-wrapper {

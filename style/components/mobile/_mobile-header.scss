@@ -4,15 +4,16 @@
 $page-max-width: 100%; // Set max width of page 
 $header-height: 80px;
 $nav-height: 100vh; // Set height of the menu slide in
-$menu-height: 70%; // Set height of menu items 
+$menu-height: auto; // Set height of menu items 
 $timline-width: 2px; // Set width of timeline
 $dot-size: 30px; // adjust dot size on menu timleline
 $dot-border: 5px; // adjust the border on dots => border timline
 
 
 // ********* RESET CSS (Probalby delete later)  ********* 
-html {
+body {
     overflow-x: hidden; // Hides overflow when mobile menu is hidden 
+
 }
 
 // ******* Outlines for dev *******
@@ -28,6 +29,7 @@ html {
 header {
     display: flex;
     position: sticky;
+    z-index: 1;
     top: 0;
     flex-direction: column;
     justify-content: center;
@@ -43,7 +45,8 @@ header {
 
     .mobile-nav-toggle {
         position: relative;
-        z-index: 999;
+        z-index: 100000;
+
     }
 }
 
@@ -55,6 +58,7 @@ header {
 // Remember! primary-navigation slides in when burger button pressed
 .primary-navigation {
     position: absolute;
+    z-index: 9999;
     top: 0;
     display: none;
     transform: translateX(calc(100% - (v.$page-margin) / 2));
@@ -81,7 +85,7 @@ header {
         height: 100%;
 
         .timeline {
-            height: calc($menu-height - 25px);
+            height: calc(100%);
             border: $timline-width solid v.$dark-color;
             border-radius: 2px;
         }
@@ -96,12 +100,14 @@ header {
         height: 80%;
         height: $menu-height;
         justify-content: space-between;
+        gap: 1rem;
 
         * {
             // Edit main menu styles here
             text-decoration: none;
-            font-size: 1.3rem;
-            font-weight: 600;
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
             color: inherit;
         }
 
@@ -120,8 +126,12 @@ header {
             border: 5px solid v.$higlight-color;
         }
 
+        li {
+            transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+        }
+
         a:hover::after {
-            transform: scale(1.2);
+            transform: scale(1.1);
         }
 
     }
