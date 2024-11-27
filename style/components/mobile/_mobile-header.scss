@@ -9,15 +9,6 @@ $timline-width: 2px; // Set width of timeline
 $dot-size: 30px; // adjust dot size on menu timleline
 $dot-border: 5px; // adjust the border on dots => border timline
 
-// ------------------------------------------ *** NOTE TO CODE REVIEWER *** -------------------------------------------------
-//
-// Mobile menu is hidden by deault. Change these variables to see the menu  
-//
-
-// $slide-menu-to-wp: translateX(calc(20% - $page-margin)); // for visible menu: translateX(calc(0% - $page-margin));
-//
-//---------------------------------------------------------------------------------------------------------------------------
-
 
 // ********* RESET CSS (Probalby delete later)  ********* 
 html {
@@ -25,13 +16,13 @@ html {
 }
 
 // ******* Outlines for dev *******
-header,
-header *,
-*::before,
-*::after {
-    outline: 2px solid lime;
-    box-sizing: border-box;
-}
+// header,
+// header *,
+// *::before,
+// *::after {
+//     outline: 2px solid lime;
+//     box-sizing: border-box;
+// }
 
 
 header {
