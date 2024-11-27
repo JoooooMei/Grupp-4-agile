@@ -18,21 +18,25 @@
         order: 2;
     }
 */
+
+//        background-image: url('../assets/images/test-bilder/mobile-background.jpg');
+
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        div {
-            //padding: 20px;
+        /*article {
             margin: auto;
+        }*/
+
+        figcaption{
+            outline: 2px solid rgba(0, 0, 0, 0.255);
+            text-align: center;
+            background-color: rgba($color: #000000, $alpha: 0.2);
         }
 
-        /*[class*="text"]{
-    background-image: '../assets/images/test-bilder/bild2.jpg';
-    }*/
         p {
             padding: 20px;
-            //background-image: url('../assets/images/test-bilder/mobile-background.jpg');
             width: 100%;
             //z-index: 33;
             //color: aliceblue;
