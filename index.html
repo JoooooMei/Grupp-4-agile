@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="style/style.css" type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="js/script.js" defer></script>
+	<script src="js/nav.js" defer></script>
 </head>
 
 <body>
@@ -15,8 +16,11 @@
 			<div class="logo-wrapper">
 				<h1>Logo</h1>
 			</div>
-			<button>menu</button>
-			<nav>
+
+			<button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="closed"><span
+					class="sr-only">menu</span></button>
+
+			<nav id="primary-navigation" class="primary-navigation" data-visible="closed">
 				<div class="timeline-wrapper">
 					<div class="timeline"></div>
 				</div>
@@ -33,65 +37,113 @@
 	</header>
 	<main>
 		<div class="grid-container">
-			<article class="text1"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et vero architecto accusamus ad vel suscipit,
-				tenetur voluptas molestias nobis nihil, nostrum dignissimos incidunt. Consequuntur iste libero impedit
-				dolore praesentium nam, consectetur hic! A magnam totam impedit aliquam enim similique omnis. Nesciunt
-				asperiores, tempora magni mollitia est doloremque ullam debitis, ipsa sed soluta aut provident
-				aspernatur deleniti sit, illum praesentium neque! Voluptatum enim nostrum harum. Error, fugiat dolorem
-				magni ratione officia recusandae tempore, molestiae, vero nobis autem illo accusantium illum. Optio!</p>
+			<article class="text1">
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et vero architecto accusamus ad vel
+					suscipit,
+					tenetur voluptas molestias nobis nihil, nostrum dignissimos incidunt. Consequuntur iste libero
+					impedit
+					dolore praesentium nam, consectetur hic! A magnam totam impedit aliquam enim similique omnis.
+					Nesciunt
+					asperiores, tempora magni mollitia est doloremque ullam debitis, ipsa sed soluta aut provident
+					aspernatur deleniti sit, illum praesentium neque! Voluptatum enim nostrum harum. Error, fugiat
+					dolorem
+					magni ratione officia recusandae tempore, molestiae, vero nobis autem illo accusantium illum. Optio!
+				</p>
 			</article>
 			<div class="middle"></div>
 
-			<figure class="image img1" id="i1"><img src="assets/images/test-bilder/Bitcoin.svg.png" alt="" height="250px"
-					width="250px"><figcaption>Btc</figcaption></figure>
-			<figure class="image img2" id="i2"><img src="assets/images/test-bilder/bild2.jpg" alt=""><figcaption>Btc</figcaption></figure>
+			<figure class="image img1" id="i1"><img src="assets/images/test-bilder/Bitcoin.svg.png" alt=""
+					height="250px" width="250px">
+				<figcaption>Btc</figcaption>
+			</figure>
+			<figure class="image img2" id="i2"><img src="assets/images/test-bilder/bild2.jpg" alt="">
+				<figcaption>Btc</figcaption>
+			</figure>
 			<div class="middle"></div>
-			<article class="text2"><p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, cumque ab id blanditiis recusandae,
+			<article class="text2">
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, cumque ab id blanditiis recusandae,
 					aliquid distinctio assumenda repellat doloremque illo, voluptate dolor beatae quia deleniti fugit
 					praesentium labore at alias est aut mollitia. Non, laborum. Voluptatem, mollitia. Ratione, animi
 					consequuntur.
-			</p></article>
-			<article class="text3"><p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem officiis modi, saepe, ipsa,
-					illo dolores itaque tempora eligendi veritatis temporibus quae. Necessitatibus dolorem, cumque doloribus
-					ab dignissimos beatae autem quisquam maiores placeat vitae, ipsum deserunt? Culpa soluta beatae possimus
+				</p>
+			</article>
+			<article class="text3">
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem officiis modi, saepe, ipsa,
+					illo dolores itaque tempora eligendi veritatis temporibus quae. Necessitatibus dolorem, cumque
+					doloribus
+					ab dignissimos beatae autem quisquam maiores placeat vitae, ipsum deserunt? Culpa soluta beatae
+					possimus
 					officia.
-			</p></article>
+				</p>
+			</article>
 			<div class="middle"></div>
 
-			<figure class="image img3" id="i3"><img src="assets/images/test-bilder/Bitcoin.svg.png" alt="" height="250px"
-					width="250px" ><figcaption>Btc</figcaption></figure>
-			<figure class="image img4" id="i4"><img src="assets/images/test-bilder/bild3.jpg" alt="" height="150px" width="300px">
-			<figcaption>Btc</figcaption></figure>
+			<figure class="image img3" id="i3"><img src="assets/images/test-bilder/Bitcoin.svg.png" alt=""
+					height="250px" width="250px">
+				<figcaption>Btc</figcaption>
+			</figure>
+			<figure class="image img4" id="i4"><img src="assets/images/test-bilder/bild3.jpg" alt="" height="150px"
+					width="300px">
+				<figcaption>Btc</figcaption>
+			</figure>
 			<div class="middle"></div>
-			<article class="text4"><p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ad dicta adipisci est? Fuga alias
-					eligendi similique quia amet ex minima consequuntur exercitationem quibusdam sed fugiat, provident rem
+			<article class="text4">
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ad dicta adipisci est? Fuga
+					alias
+					eligendi similique quia amet ex minima consequuntur exercitationem quibusdam sed fugiat, provident
+					rem
 					officia cupiditate praesentium, numquam inventore esse veniam! Aperiam, dignissimos provident fugiat
-					cumque maxime laborum rerum, deleniti magni et cupiditate distinctio sed tempore repellat soluta animi
+					cumque maxime laborum rerum, deleniti magni et cupiditate distinctio sed tempore repellat soluta
+					animi
 					optio! Reprehenderit voluptatibus totam maxime est in?
-			</p></article>
-			<article class="text5"><p>
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex assumenda ad molestiae esse et accusamus.
+				</p>
+			</article>
+			<article class="text5">
+				<p>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex assumenda ad molestiae esse et
+					accusamus.
 					Officia ducimus autem ea atque animi nobis iusto beatae! Optio facilis perspiciatis dolore quasi
-					architecto voluptatem, numquam cumque. Facilis voluptates itaque ad sint unde reprehenderit modi autem!
-					Omnis inventore praesentium libero, assumenda ut ea nemo cum repudiandae, quis illum fugit ratione magni
+					architecto voluptatem, numquam cumque. Facilis voluptates itaque ad sint unde reprehenderit modi
+					autem!
+					Omnis inventore praesentium libero, assumenda ut ea nemo cum repudiandae, quis illum fugit ratione
+					magni
 					sequi commodi aliquid recusandae perferendis! Maxime explicabo vero eum, eligendi aperiam quam
-					consequuntur esse, ullam odit natus voluptate placeat laborum tempore eius quasi incidunt? Ducimus, at!
-					Eum dolore ducimus, asperiores ut tempora in. Facere, nostrum sit. Velit incidunt alias nisi? Quae est
+					consequuntur esse, ullam odit natus voluptate placeat laborum tempore eius quasi incidunt? Ducimus,
+					at!
+					Eum dolore ducimus, asperiores ut tempora in. Facere, nostrum sit. Velit incidunt alias nisi? Quae
+					est
 					consequuntur laborum, magni fuga rerum voluptates, tempore voluptatum sed sint necessitatibus ipsam
 					similique ut accusamus soluta perspiciatis ab voluptate illo. Unde!
-			</p></article>
+				</p>
+			</article>
 			<div class="middle"></div>
 
-			<figure class="image img5" id="i5"><img src="assets/images/test-bilder/bild2.jpg" alt="" height="300px"><figcaption>Btc</figcaption></figure>
-			<figure class="image img6" id="i6"><img src="assets/images/test-bilder/Bitcoin.svg.png" alt="" height="450px"><figcaption>Btc</figcaption></figure>
+			<figure class="image img5" id="i5"><img src="assets/images/test-bilder/bild2.jpg" alt="" height="300px">
+				<figcaption>Btc</figcaption>
+			</figure>
+			<figure class="image img6" id="i6"><img src="assets/images/test-bilder/Bitcoin.svg.png" alt=""
+					height="450px">
+				<figcaption>Btc</figcaption>
+			</figure>
 
 			<div class="middle"></div>
-			<article class="text6"><p>
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum aspernatur dignissimos sed facere illo pariatur nostrum autem quam quisquam odio suscipit sit nobis, laudantium voluptatem voluptates modi nulla sunt fuga blanditiis at maiores? Quo recusandae repellendus eaque nostrum nobis reiciendis quia molestiae praesentium. Dolorem laudantium beatae vitae voluptatum et possimus, ipsam, nostrum maxime repellendus corporis sint, enim quas. Dignissimos et asperiores doloremque nihil exercitationem neque dolore amet aspernatur tempore, modi explicabo recusandae qui est rerum fugit sint sequi quod sunt assumenda repellat? Veritatis hic nemo nostrum culpa quis consequuntur necessitatibus beatae quo. Nisi deleniti voluptas error suscipit illum natus quo dolorem consectetur magnam molestias asperiores rem deserunt voluptatibus commodi a reiciendis culpa maxime dolores, explicabo, sapiente ad ex sequi saepe.
-			</p></article>
+			<article class="text6">
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum aspernatur dignissimos sed facere
+					illo pariatur nostrum autem quam quisquam odio suscipit sit nobis, laudantium voluptatem voluptates
+					modi nulla sunt fuga blanditiis at maiores? Quo recusandae repellendus eaque nostrum nobis
+					reiciendis quia molestiae praesentium. Dolorem laudantium beatae vitae voluptatum et possimus,
+					ipsam, nostrum maxime repellendus corporis sint, enim quas. Dignissimos et asperiores doloremque
+					nihil exercitationem neque dolore amet aspernatur tempore, modi explicabo recusandae qui est rerum
+					fugit sint sequi quod sunt assumenda repellat? Veritatis hic nemo nostrum culpa quis consequuntur
+					necessitatibus beatae quo. Nisi deleniti voluptas error suscipit illum natus quo dolorem consectetur
+					magnam molestias asperiores rem deserunt voluptatibus commodi a reiciendis culpa maxime dolores,
+					explicabo, sapiente ad ex sequi saepe.
+				</p>
+			</article>
 		</div>
 	</main>
 	<section class="cookie-banner" id="cookie-banner">
@@ -112,35 +164,37 @@
 
 	<footer class="footer">
 		<div class="footer-container">
-		  <div class="footer-section">
-			<h3>About Us</h3>
-			<p>Learn more about Bitcoin Bros and how we are shaping the future of Web3.</p>
-		  </div>
-		  <div class="footer-section">
-			<h3>Quick Links</h3>
-			<ul>
-			  <li><a href="#">Home</a></li>
-			  <li><a href="#">Services</a></li>
-			  <li><a href="#">Contact</a></li>
-			  <li><a href="#">FAQ</a></li>
-			</ul>
-		  </div>
-		  <div class="footer-section">
-			<h3>Follow Us</h3>
-			<div class="social-links">
-			  <a href="#" target="_blank"><img src="assets/images/test-bilder/facebook-icon.svg" alt="Facebook"></a>
-			  <a href="#" target="_blank"><img src="assets/images/test-bilder/twitter-icon.svg" alt="Twitter"></a>
-			  <a href="#" target="_blank"><img src="assets/images/test-bilder/instagram-icon.svg" alt="Instagram"></a>
+			<div class="footer-section">
+				<h3>About Us</h3>
+				<p>Learn more about Bitcoin Bros and how we are shaping the future of Web3.</p>
 			</div>
-		  </div>
+			<div class="footer-section">
+				<h3>Quick Links</h3>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">FAQ</a></li>
+				</ul>
+			</div>
+			<div class="footer-section">
+				<h3>Follow Us</h3>
+				<div class="social-links">
+					<a href="#" target="_blank"><img src="assets/images/test-bilder/facebook-icon.svg"
+							alt="Facebook"></a>
+					<a href="#" target="_blank"><img src="assets/images/test-bilder/twitter-icon.svg" alt="Twitter"></a>
+					<a href="#" target="_blank"><img src="assets/images/test-bilder/instagram-icon.svg"
+							alt="Instagram"></a>
+				</div>
+			</div>
 		</div>
 		<div class="footer-bottom">
-		  <p>&copy; 2024 Bitcoin Bros. All rights reserved.</p>
-	  <p>Made With ❤️ In 🇸🇪</p>
-	  
+			<p>&copy; 2024 Bitcoin Bros. All rights reserved.</p>
+			<p>Made With ❤️ In 🇸🇪</p>
+
 		</div>
-	  </footer>
-	  
+	</footer>
+
 
 </body>
 

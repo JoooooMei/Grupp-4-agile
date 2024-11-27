@@ -1,8 +1,6 @@
 // ********* Menu Desktop *********
 
 // Dimentions Desktop
-$page-margin: 3rem; // Set minimum outer margin of page (in this case header)
-// $page-max-width: 1400px; // Set max width of page (in this case header)
 
 // Menu settings 
 $menu-height: 120px; // Set height of the header 
@@ -42,12 +40,12 @@ header {
         padding: 0;
         top: 0;
         transform: translateX(0%);
-
+        height: auto;
         // Edit theese variables to adjust positions in alternating menu items.
         $offset-from-line: $dot-size; // Adjust list-item offset from timeline in menu  
         $dot-adjustment: - calc($dot-border / 2); // correct position of dots (the border of dots divided by 2)
 
-        height: auto;
+
 
         li:nth-child(1) a {
             padding-top: $offset-from-line;
@@ -144,10 +142,30 @@ header {
         * {
             position: relative;
         }
+
+        // Dots on timeline 
+        a::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            height: $dot-size;
+            width: $dot-size;
+            left: 22%;
+            aspect-ratio: 1 / 1;
+            border-radius: 100%;
+            background-color: v.$dark-color;
+            transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+            border: $dot-border solid v.$higlight-color;
+        }
+
+        a:hover::after {
+            transform: scale(1.2);
+        }
     }
 
     .logo-wrapper {
-        margin-right: $page-margin * 2;
+        //Avoid logo colliding with menu list items
+        margin-right: v.$d-page-margin * 2;
     }
 }
 
@@ -155,26 +173,11 @@ header {
 
 nav {}
 
+
 .header-wrapper {
+    ul {}
 
-    // Dots on timeline 
-    a::after {
-        content: '';
-        display: inline-block;
-        position: absolute;
-        height: $dot-size;
-        width: $dot-size;
-        left: 22%;
-        aspect-ratio: 1 / 1;
-        border-radius: 100%;
-        background-color: v.$dark-color;
-        transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
-        border: $dot-border solid v.$higlight-color;
-    }
 
-    a:hover::after {
-        transform: scale(1.2);
-    }
 
 
 }
