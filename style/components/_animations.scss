@@ -1,17 +1,23 @@
+@import 'variables/variables';
 
-@mixin button-spin {
-    animation-duration: 3s;
-    animation-name: spin;
-
+@mixin button-hover-pulse {
+    &:hover {
+        background-color: $higlight-color;
+        font-weight: 700;
+        animation-name: hover-animation;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
 }
 
-@keyframes spin {
+@keyframes hover-animation {
     0% {
-
+        width: 60vw;
     }
 
-    100%{
-        transform: rotate(360deg);
+    100% {
         border-radius: 100%;
+        width: 40vw;
     }
 }
