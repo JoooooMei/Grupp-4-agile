@@ -187,3 +187,53 @@ __________________________________________________
 
 
 ![alt text](img/26-nov.png)
+
+## 11/27/24
+
+__________________________________________________
+# What did we accomplish?
+
+David finished graphics & footer.
+Hannes finished scrolling and accessibility.
+Mansoor R&D.
+Johan finished style-template.
+__________________________________________________
+
+# What is our goal?
+
+David R&D.
+Hannes R&D & documentation.
+Mansoor Animations and documentation.
+Johan Header.
+
+__________________________________________________
+
+# Team Summary:
+
+
+![alt text](img/27-nov.png)
+
+## 11/28/24
+
+__________________________________________________
+# What did we accomplish?
+
+David R&D
+Hannes R&D
+Mansoor Animations
+Johan Header
+__________________________________________________
+
+# What is our goal?
+
+David Finish up things.
+Hannes Finish up things.
+Mansoor Merge animations and cookie-task.
+Johan Finish header.
+
+__________________________________________________
+
+# Team Summary:
+
+
+![alt text](img/28-nov.png)
