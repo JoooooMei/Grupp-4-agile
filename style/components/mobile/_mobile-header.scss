@@ -11,13 +11,6 @@ $timline-width: 2px; // Set width of timeline
 $dot-size: 30px; // adjust dot size on menu timleline
 $dot-border: 5px; // adjust the border on dots => border timline
 
-
-// ********* RESET CSS (Probalby delete later)  ********* 
-body {
-    overflow-x: hidden; // Hides overflow when mobile menu is hidden 
-
-}
-
 // ******* Outlines for dev *******
 // header,
 // header *,
@@ -88,6 +81,16 @@ header {
         rgba(0, 0, 0, 0.3) 0px 0px 60px -30px;
     transition: transform 0.3s ease-in-out;
 
+    .image-wrapper {
+        position: absolute;
+        z-index: 999999;
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        width: 33%;
+        background-color: v.$higlight-color;
+    }
 
     // Slide in mobile menu triggerd by nav.js
     &[data-visible="open"] {
@@ -172,10 +175,12 @@ header {
     border: none;
 }
 
+// Offset middle bar in hamburger on hover
 .mobile-nav-toggle:hover~.hamburger-wrapper .hamburger:nth-of-type(2) {
-    right: 4px;
+    transform: translateX(-20%);
 }
 
+// Hamburerm menu styles
 .hamburger-wrapper {
     display: flex;
     flex-direction: column;
@@ -187,20 +192,50 @@ header {
     align-items: center;
     right: v.$page-margin;
 
+    // Hide middle bar in hamburger when menu is open
+    &[data-visible="open"] {
+        .hamburger:nth-of-type(2) {
+            visibility: hidden;
+        }
+    }
+
+    // Try to reset offset on mobie but does not work :( 
+    &[data-visible="closed"] {
+        .hamburger:nth-of-type(2) {
+            transform: translateX(0%);
+
+        }
+    }
+
+    // Transfort to X symbol when menu is open
+    &[data-visible="open"] {
+        .hamburger:nth-of-type(1) {
+            transform: rotate(45deg);
+            top: 11px;
+            width: 40px;
+        }
+    }
+
+    &[data-visible="open"] {
+        .hamburger:nth-of-type(3) {
+            transform: rotate(-45deg);
+            top: -11px;
+            width: 40px;
+        }
+    }
+
+
+
     .hamburger {
         position: relative;
         height: 5px;
         width: 35px;
         background-color: v.$dark-color;
         border-radius: 10px;
-
+        transition: transform 0.2s ease-in-out;
 
         &:nth-of-type(1) {
             margin-top: 18px;
-        }
-
-        &:nth-of-type(1) {
-            transition: right 0.3s ease-in-out, transform 0.3s ease-in-out;
         }
 
         &:nth-of-type(3) {
