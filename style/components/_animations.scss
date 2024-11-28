@@ -3,7 +3,7 @@
 // changes background color and pulsates the element by scaling it up and rounding its corners 
 @mixin button-hover-pulse {
     &:hover {
-        background-color: $higlight-color;
+        background-color: green;
         font-weight: 700;
         animation-name: hover-animation-pulse;
         animation-duration: 0.5s;
@@ -25,7 +25,6 @@
     transition: transform 0.3s ease; 
 
     &:hover {
-        background-color: $higlight-color;
         transform: scale(0.5);
         animation-name: hover-animation-avoid;
         animation-duration: 2s;
