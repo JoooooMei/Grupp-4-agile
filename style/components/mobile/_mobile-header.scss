@@ -19,13 +19,13 @@ body {
 }
 
 // ******* Outlines for dev *******
-header,
-header *,
-*::before,
-*::after {
-    outline: 2px solid lime;
-    box-sizing: border-box;
-}
+// header,
+// header *,
+// *::before,
+// *::after {
+//     outline: 2px solid lime;
+//     box-sizing: border-box;
+// }
 
 
 header {
@@ -71,21 +71,25 @@ header {
 
 
 
-// Remember! primary-navigation slides in when burger button pressed
+// Primary-navigation slides in when burger button pressed
 .primary-navigation {
-    position: absolute;
+    position: fixed;
     z-index: 9999;
     top: 0;
-    display: none;
+    display: flex;
     transform: translateX(calc(100% - (v.$page-margin) / 2));
     justify-content: center;
     align-items: center;
     width: 100%;
     background-color: v.$higlight-color;
     height: $nav-height;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+        rgba(50, 50, 93, 0.25) 0px 0px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 0px 60px -30px;
+    transition: transform 0.3s ease-in-out;
 
 
-    // Slide in mobile menu
+    // Slide in mobile menu triggerd by nav.js
     &[data-visible="open"] {
         display: flex;
         transform: translateX(calc(20% - (v.$page-margin) / 2));
@@ -121,7 +125,7 @@ header {
         * {
             // Edit main menu styles here
             text-decoration: none;
-            font-size: 1.2rem;
+            font-size: 2rem;
             font-weight: 700;
             letter-spacing: 2px;
             color: inherit;
