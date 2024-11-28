@@ -1,0 +1,50 @@
+@import 'variables/variables';
+
+// changes background color and pulsates the element by scaling it up and rounding its corners 
+@mixin button-hover-pulse {
+    &:hover {
+        background-color: green;
+        font-weight: 700;
+        animation-name: hover-animation-pulse;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+}
+
+@keyframes hover-animation-pulse {
+    100% {
+        border-radius: 100%;
+        transform: scale(1.1);
+    }
+}
+
+// element changes position in a circle around its original position
+@mixin button-hover-avoid {
+    position: relative;
+    transition: transform 0.3s ease; 
+
+    &:hover {
+        transform: scale(0.5);
+        animation-name: hover-animation-avoid;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+}
+
+@keyframes hover-animation-avoid {
+    0% {
+        transform: translate(0, 100px) scale(0.2);
+    }
+    25% {
+        transform: translate(50px, -50px) scale(0.6);
+    }
+    50% {
+        transform: translate(-100px, -50px) scale(0.2);
+    }
+    75% {
+        transform: translate(0, 100px) scale(0.3);
+    }
+
+}
