@@ -37,6 +37,10 @@ header {
     width: 100%;
     max-width: v.$d-page-max-width;
 
+    .image-wrapper {
+        display: none;
+    }
+
     .logo-wrapper {
         height: $logo-size;
         width: $logo-size;
