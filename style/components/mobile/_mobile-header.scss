@@ -92,7 +92,7 @@ header {
     // Slide in mobile menu triggerd by nav.js
     &[data-visible="open"] {
         display: flex;
-        transform: translateX(calc(20% - (v.$page-margin) / 2));
+        transform: translateX(calc(30% - (v.$page-margin) / 2));
     }
 
 
@@ -100,7 +100,7 @@ header {
         display: flex;
         flex-direction: column;
         position: absolute;
-        left: 20%; // adjust horizontal position for timeline here 
+        left: 16%; // adjust horizontal position for timeline here 
         justify-content: center;
         height: 100%;
 
@@ -125,10 +125,12 @@ header {
         * {
             // Edit main menu styles here
             text-decoration: none;
-            font-size: 2rem;
-            font-weight: 700;
-            letter-spacing: 2px;
+            font-family: v.$display-font;
+            font-size: 1.6rem;
+            font-weight: 600;
+            letter-spacing: 4px;
             color: inherit;
+            margin-left: -30px;
         }
 
         // ********* Dots on timeline *********
@@ -138,7 +140,8 @@ header {
             position: absolute;
             height: $dot-size;
             width: $dot-size;
-            left: calc(20% - (#{$dot-size} / 2) + $timline-width);
+            left: calc(16% - (#{$dot-size} / 2) + $timline-width); // Dot horizontal position 
+            margin-top: 5px;
             aspect-ratio: 1 / 1;
             border-radius: 100%;
             background-color: v.$dark-color;
@@ -151,12 +154,58 @@ header {
         }
 
         a:hover::after {
-            transform: scale(1.1);
+            transform: scale(1.3);
         }
 
     }
 
+}
+
+// ******* Nav button styles ********
+
+.mobile-nav-toggle {
+    background-color: transparent;
+    width: 40px;
+    cursor: pointer;
+    height: 40px;
+    margin: auto 0;
+    border: none;
+}
+
+.mobile-nav-toggle:hover~.hamburger-wrapper .hamburger:nth-of-type(2) {
+    right: 4px;
+}
+
+.hamburger-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: space-around;
+    z-index: 99999;
+    height: calc(100% - 10px);
+    width: 40px;
+    align-items: center;
+    right: v.$page-margin;
+
+    .hamburger {
+        position: relative;
+        height: 5px;
+        width: 35px;
+        background-color: v.$dark-color;
+        border-radius: 10px;
 
 
+        &:nth-of-type(1) {
+            margin-top: 18px;
+        }
 
+        &:nth-of-type(1) {
+            transition: right 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        &:nth-of-type(3) {
+            margin-bottom: 18px;
+        }
+
+    }
 }

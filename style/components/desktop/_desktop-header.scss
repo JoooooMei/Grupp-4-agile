@@ -4,7 +4,7 @@
 
 // Menu settings 
 $header-height: 120px; // Set height of the header 
-$nav-width: 550px; // Set width of desktop menu 
+$nav-width: 650px; // Set width of desktop menu 
 
 $dot-size: 22px; // adjust dot size on menu timleline
 $dot-border: 3px; // adjust the border on dots => border timline
@@ -44,7 +44,12 @@ header {
         margin-right: v.$d-page-margin;
     }
 
-    button {
+    // Hide mobile nav toggle button and hamburger menu
+    .mobile-nav-toggel {
+        display: none;
+    }
+
+    .hamburger-wrapper {
         display: none;
     }
 
@@ -59,6 +64,7 @@ header {
         top: 0;
         transform: translateX(0%);
         height: auto;
+        box-shadow: none;
 
         // ***** Alternating offset menu items *****
         // Edit theese variables to adjust positions in alternating menu items.
@@ -160,6 +166,7 @@ header {
         * {
             position: relative;
             font-size: 1.2rem;
+            margin: 0;
         }
 
         // Dots on timeline 
@@ -170,6 +177,7 @@ header {
             display: inline-block;
             position: absolute;
             height: $dot-size;
+            margin-top: 1px; // Adjust odd dots horizontal position
             width: $dot-size;
             left: $horizontal-pos;
             aspect-ratio: 1 / 1;
