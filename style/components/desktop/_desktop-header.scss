@@ -3,11 +3,12 @@
 // Dimentions Desktop
 
 // Menu settings 
-$menu-height: 120px; // Set height of the header 
+$header-height: 120px; // Set height of the header 
 $nav-width: 550px; // Set width of desktop menu 
 
 $dot-size: 22px; // adjust dot size on menu timleline
 $dot-border: 3px; // adjust the border on dots => border timline
+$logo-size: calc($header-height - 30px);
 
 header {
     display: flex;
@@ -15,8 +16,16 @@ header {
     align-items: center;
     overflow-x: hidden;
     padding-inline: v.$d-page-margin;
-    height: $menu-height;
+    height: $header-height;
     background-color: v.$higlight-color;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+
+
 }
 
 .header-wrapper {
@@ -27,6 +36,13 @@ header {
     height: 100%;
     width: 100%;
     max-width: v.$d-page-max-width;
+
+    .logo-wrapper {
+        height: $logo-size;
+        width: $logo-size;
+        //Avoid logo colliding with menu list items when display is small
+        margin-right: v.$d-page-margin;
+    }
 
     button {
         display: none;
@@ -162,24 +178,6 @@ header {
             border: $dot-border solid v.$higlight-color;
         }
 
-
     }
-
-    .logo-wrapper {
-        //Avoid logo colliding with menu list items
-        margin-right: v.$d-page-margin * 2;
-    }
-}
-
-// Adjust position menu list-items 
-
-nav {}
-
-
-.header-wrapper {
-    ul {}
-
-
-
 
 }

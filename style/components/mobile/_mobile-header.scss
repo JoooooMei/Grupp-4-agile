@@ -2,9 +2,11 @@
 
 // $page-margin: 2rem; // Set minimum outer margin of page
 $page-max-width: 100%; // Set max width of page 
-$header-height: 80px;
+$header-height: 80px; // Height of header
+$logo-size: calc($header-height - 10px);
 $nav-height: 100vh; // Set height of the menu slide in
 $menu-height: auto; // Set height of menu items 
+
 $timline-width: 2px; // Set width of timeline
 $dot-size: 30px; // adjust dot size on menu timleline
 $dot-border: 5px; // adjust the border on dots => border timline
@@ -17,13 +19,13 @@ body {
 }
 
 // ******* Outlines for dev *******
-// header,
-// header *,
-// *::before,
-// *::after {
-//     outline: 2px solid lime;
-//     box-sizing: border-box;
-// }
+header,
+header *,
+*::before,
+*::after {
+    outline: 2px solid lime;
+    box-sizing: border-box;
+}
 
 
 header {
@@ -54,7 +56,20 @@ header {
 .header-wrapper {
     display: flex;
     justify-content: space-between;
+
+
+    .logo-wrapper {
+        height: $logo-size;
+        width: $logo-size;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
+
+
 
 // Remember! primary-navigation slides in when burger button pressed
 .primary-navigation {
