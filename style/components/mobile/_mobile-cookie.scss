@@ -1,3 +1,5 @@
+@import '../_animations.scss';
+
 $max-width: 36rem;
 
 .cookie-banner {
@@ -36,6 +38,14 @@ $max-width: 36rem;
         .button {
             width: 80vw;
             max-width: $max-width - 2rem;
+        }
+
+        .accept-button {
+            @include button-hover-pulse; 
+        }
+
+        .decline-button {
+            @include button-hover-avoid; 
         }
 
     }
