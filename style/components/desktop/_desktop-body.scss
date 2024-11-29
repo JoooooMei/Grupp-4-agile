@@ -4,9 +4,6 @@ main::before {
     outline: 3px solid yellow;
 }
 
-/*main {
-    //margin-top: 100px;
-}*/
 
 .grid-container {
     display: grid;
@@ -25,11 +22,13 @@ main::before {
 
     p {
         padding: 20px;
-        
+
     }
+
     figcaption {
         display: none;
     }
+
 
     .middle {
         border-radius: 5px;
@@ -46,7 +45,7 @@ main::before {
         justify-self: stretch;
         //align-self: stretch;
         text-align: center;
-        
+
     }
 
     .img1 {
@@ -58,7 +57,7 @@ main::before {
 
     .img2 {
         background-color: bisque;
-       
+
 
     }
 
@@ -69,7 +68,7 @@ main::before {
 
     .img4 {
         background-color: cornflowerblue;
-       
+
     }
 
     .img5 {
