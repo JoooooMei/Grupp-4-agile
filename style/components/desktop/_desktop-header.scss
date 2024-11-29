@@ -1,23 +1,31 @@
 // ********* Menu Desktop *********
 
 // Dimentions Desktop
-$page-margin: 3rem; // Set minimum outer margin of page (in this case header)
-// $page-max-width: 1400px; // Set max width of page (in this case header)
 
 // Menu settings 
-$menu-height: 120px; // Set height of the header 
-$nav-width: 700px; // Set width of desktop menu 
+$header-height: 120px; // Set height of the header 
+$nav-width: 650px; // Set width of desktop menu 
 
-$dot-size: 30px; // adjust dot size on menu timleline
-$dot-border: 5px; // adjust the border on dots => border timline
+$dot-size: 22px; // adjust dot size on menu timleline
+$dot-border: 3px; // adjust the border on dots => border timline
+$logo-size: calc($header-height - 30px);
 
 header {
     display: flex;
     top: 0;
     align-items: center;
+    overflow-x: hidden;
     padding-inline: v.$d-page-margin;
-    height: $menu-height;
+    height: $header-height;
     background-color: v.$higlight-color;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+
+
 }
 
 .header-wrapper {
@@ -29,11 +37,28 @@ header {
     width: 100%;
     max-width: v.$d-page-max-width;
 
-    button {
+    .image-wrapper {
         display: none;
     }
 
-    nav {
+    .logo-wrapper {
+        height: $logo-size;
+        width: $logo-size;
+        //Avoid logo colliding with menu list items when display is small
+        margin-right: v.$d-page-margin;
+    }
+
+    // Hide mobile nav toggle button and hamburger menu
+    .mobile-nav-toggel {
+        display: none;
+    }
+
+    .hamburger-wrapper {
+        display: none;
+    }
+
+    .primary-navigation {
+        background-color: transparent;
         display: block;
         position: relative;
         width: $nav-width;
@@ -42,12 +67,13 @@ header {
         padding: 0;
         top: 0;
         transform: translateX(0%);
-
-        // Edit theese variables to adjust positions in alternating menu items.
-        $offset-from-line: $dot-size; // Adjust list-item offset from timeline in menu  
-        $dot-adjustment: - calc($dot-border / 2); // correct position of dots (the border of dots divided by 2)
-
         height: auto;
+        box-shadow: none;
+
+        // ***** Alternating offset menu items *****
+        // Edit theese variables to adjust positions in alternating menu items.
+        $offset-from-line: 25px; // Adjust list-item offset from timeline in menu  
+        $dot-adjustment: 0px; // Vertical dot adjustment
 
         li:nth-child(1) a {
             padding-top: $offset-from-line;
@@ -117,14 +143,14 @@ header {
         display: flex;
         position: absolute;
         left: 0px;
-        align-items: center;
+        align-items: left;
         justify-content: center;
         height: 100%;
         width: 100%;
 
         .timeline {
             height: 0px;
-            width: calc(100% - 25px);
+            width: 300%;
             border: 2px solid v.$dark-color;
             border-radius: 2px;
         }
@@ -143,38 +169,28 @@ header {
 
         * {
             position: relative;
+            font-size: 1.2rem;
+            margin: 0;
         }
+
+        // Dots on timeline 
+        a::after {
+            // Adjust dots horizontal position 
+            $horizontal-pos: 28%;
+            content: '';
+            display: inline-block;
+            position: absolute;
+            height: $dot-size;
+            margin-top: 1px; // Adjust odd dots horizontal position
+            width: $dot-size;
+            left: $horizontal-pos;
+            aspect-ratio: 1 / 1;
+            border-radius: 100%;
+            background-color: v.$dark-color;
+            transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+            border: $dot-border solid v.$higlight-color;
+        }
+
     }
-
-    .logo-wrapper {
-        margin-right: $page-margin * 2;
-    }
-}
-
-// Adjust position menu list-items 
-
-nav {}
-
-.header-wrapper {
-
-    // Dots on timeline 
-    a::after {
-        content: '';
-        display: inline-block;
-        position: absolute;
-        height: $dot-size;
-        width: $dot-size;
-        left: 22%;
-        aspect-ratio: 1 / 1;
-        border-radius: 100%;
-        background-color: v.$dark-color;
-        transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
-        border: $dot-border solid v.$higlight-color;
-    }
-
-    a:hover::after {
-        transform: scale(1.2);
-    }
-
 
 }

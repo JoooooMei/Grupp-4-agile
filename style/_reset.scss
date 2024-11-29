@@ -38,6 +38,7 @@ ol[role='list'] {
 body {
   min-height: 100vh;
   line-height: 1.5;
+  overflow-x: hidden; // Hides overflow when mobile menu is hidden. Added by Johan. If it cuases problems, let me know! 
 }
 
 /* Set shorter line heights on headings and interactive elements */
