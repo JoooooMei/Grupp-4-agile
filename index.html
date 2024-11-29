@@ -7,7 +7,14 @@
 	<link rel="stylesheet" href="style/style.css" type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/x-icon" href="assets/BitcoinBros-Favicon/favicon.ico">
+
+	<!-- *** Javascript *** -->
 	<script src="js/script.js" defer></script>
+	<script src="js/nav.js" defer></script>
+
+	<!-- *** Fonts *** -->
+	<link href="https://fonts.cdnfonts.com/css/norwester" rel="stylesheet">
+
 </head>
 
 <body>
@@ -16,83 +23,99 @@
 			<div class="logo-wrapper">
 				<img src="assets/BitcoinBros-Logo/bitcoin-bros-2.svg" alt="Bitcoin Bros Logo" height="50px">
 			</div>
-			<button>menu</button>
-			<nav>
+
+			<button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="closed">
+				<span class="sr-only">main menu</span>
+			</button>
+			<div class="hamburger-wrapper" data-visible="closed">
+				<span class="hamburger"></span>
+				<span class="hamburger"></span>
+				<span class="hamburger"></span>
+			</div>
+
+			<nav id="primary-navigation" class="primary-navigation" data-visible="closed">
+				<div class="image-wrapper">
+					<img src="assets/BitcoinBros-Logo/bitcoin-bros-3.svg" alt="" width="300px">
+				</div>
 				<div class="timeline-wrapper">
 					<div class="timeline"></div>
 				</div>
 				<ul>
 					<li><a href="#i1">2008</a></li>
-					<li><a href="#i2">2010</a></li>
-					<li><a href="#i3">2014</a></li>
-					<li><a href="#i4">2017</a></li>
-					<li><a href="#i5">2019</a></li>
+					<li><a href="#i2">2009</a></li>
+					<li><a href="#i3">2010</a></li>
+					<li><a href="#i4">2011</a></li>
+					<li><a href="#i5">2013</a></li>
 					<li><a href="#i6">2021</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
+
 	<main>
 		<div class="grid-container">
-			<article class="text1"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et vero architecto accusamus ad vel suscipit,
-				tenetur voluptas molestias nobis nihil, nostrum dignissimos incidunt. Consequuntur iste libero impedit
-				dolore praesentium nam, consectetur hic! A magnam totam impedit aliquam enim similique omnis. Nesciunt
-				asperiores, tempora magni mollitia est doloremque ullam debitis, ipsa sed soluta aut provident
-				aspernatur deleniti sit, illum praesentium neque! Voluptatum enim nostrum harum. Error, fugiat dolorem
-				magni ratione officia recusandae tempore, molestiae, vero nobis autem illo accusantium illum. Optio!</p>
+
+			<article class="text1"><p>2008: Publication of the Bitcoin Whitepaper
+				On October 31, 2008, an individual or group using the pseudonym Satoshi Nakamoto published a groundbreaking whitepaper titled "Bitcoin: A Peer-to-Peer Electronic Cash System." This document outlined the concept of a decentralized digital currency that could operate without the need for trusted intermediaries, such as banks. The proposed solution relied on blockchain technology—a distributed ledger maintained by a network of computers. The whitepaper introduced concepts like cryptographic proof-of-work, enabling trustless transactions and eliminating the risk of double-spending. This marked the genesis of the Bitcoin revolution, sparking debates about the future of money and financial systems.</p>
+
 			</article>
 			<div class="middle"></div>
 
-			<figure class="image img1" id="i1"><img src="assets/images/test-bilder/Bitcoin.svg.png" alt="" height="250px"
-					width="250px"><figcaption>Btc</figcaption></figure>
-			<figure class="image img2" id="i2"><img src="assets/images/test-bilder/bild2.jpg" alt=""><figcaption>Btc</figcaption></figure>
+			<figure class="image img1" id="i1"><img src="assets/images/test-bilder/Bitcoin.svg.png" alt=""
+					height="250px" width="250px">
+				<figcaption>Btc</figcaption>
+			</figure>
+			<figure class="image img2" id="i2"><img src="assets/images/test-bilder/bild2.jpg" alt="">
+				<figcaption>Btc</figcaption>
+			</figure>
 			<div class="middle"></div>
+
 			<article class="text2"><p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, cumque ab id blanditiis recusandae,
-					aliquid distinctio assumenda repellat doloremque illo, voluptate dolor beatae quia deleniti fugit
-					praesentium labore at alias est aut mollitia. Non, laborum. Voluptatem, mollitia. Ratione, animi
-					consequuntur.
+				2009: Genesis Block Mined
+On January 3, 2009, the Bitcoin network officially came to life with the mining of the Genesis Block (Block 0) by Satoshi Nakamoto. Embedded in the block was a now-iconic message: “The Times 03/Jan/2009 Chancellor on brink of second bailout for banks.” This served as a timestamp and a subtle critique of the traditional financial system, emphasizing Bitcoin's potential as an alternative. The Genesis Block rewarded 50 BTC, which remain unspent, symbolizing the origins of a decentralized monetary system. This event laid the foundation for the Bitcoin network, marking the beginning of a new era in digital innovation.
 			</p></article>
 			<article class="text3"><p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem officiis modi, saepe, ipsa,
-					illo dolores itaque tempora eligendi veritatis temporibus quae. Necessitatibus dolorem, cumque doloribus
-					ab dignissimos beatae autem quisquam maiores placeat vitae, ipsum deserunt? Culpa soluta beatae possimus
-					officia.
+				2010: First Bitcoin Transaction - "Bitcoin Pizza Day"
+On May 22, 2010, Bitcoin transitioned from a conceptual innovation to a practical currency when programmer Laszlo Hanyecz made the first recorded Bitcoin transaction for a tangible good. He famously paid 10,000 BTC for two pizzas from Papa John's, facilitated through a forum discussion. At the time, the value of Bitcoin was virtually negligible, making this a milestone in demonstrating Bitcoin’s real-world utility. Today, this transaction is celebrated annually as Bitcoin Pizza Day, reminding the community of how far the cryptocurrency has come in value and adoption.
 			</p></article>
+
 			<div class="middle"></div>
 
-			<figure class="image img3" id="i3"><img src="assets/images/test-bilder/Bitcoin.svg.png" alt="" height="250px"
-					width="250px" ><figcaption>Btc</figcaption></figure>
-			<figure class="image img4" id="i4"><img src="assets/images/test-bilder/bild3.jpg" alt="" height="150px" width="300px">
-			<figcaption>Btc</figcaption></figure>
+			<figure class="image img3" id="i3"><img src="assets/images/test-bilder/Bitcoin.svg.png" alt=""
+					height="250px" width="250px">
+				<figcaption>Btc</figcaption>
+			</figure>
+			<figure class="image img4" id="i4"><img src="assets/images/test-bilder/bild3.jpg" alt="" height="150px"
+					width="300px">
+				<figcaption>Btc</figcaption>
+			</figure>
 			<div class="middle"></div>
+
 			<article class="text4"><p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ad dicta adipisci est? Fuga alias
-					eligendi similique quia amet ex minima consequuntur exercitationem quibusdam sed fugiat, provident rem
-					officia cupiditate praesentium, numquam inventore esse veniam! Aperiam, dignissimos provident fugiat
-					cumque maxime laborum rerum, deleniti magni et cupiditate distinctio sed tempore repellat soluta animi
-					optio! Reprehenderit voluptatibus totam maxime est in?
+				2011: Emergence of Rival Cryptocurrencies
+As Bitcoin gained traction, its open-source nature encouraged innovation, leading to the creation of alternative cryptocurrencies (altcoins). Litecoin, introduced in October 2011 by former Google engineer Charlie Lee, was one of the first major altcoins, offering faster transaction speeds and a different hashing algorithm (Scrypt). This milestone signaled the beginning of a broader blockchain ecosystem, with hundreds of altcoins emerging to address various use cases, such as privacy (Monero) and smart contracts (Ethereum). The competition highlighted Bitcoin’s pioneering role while showcasing the potential of decentralized technology.
 			</p></article>
 			<article class="text5"><p>
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex assumenda ad molestiae esse et accusamus.
-					Officia ducimus autem ea atque animi nobis iusto beatae! Optio facilis perspiciatis dolore quasi
-					architecto voluptatem, numquam cumque. Facilis voluptates itaque ad sint unde reprehenderit modi autem!
-					Omnis inventore praesentium libero, assumenda ut ea nemo cum repudiandae, quis illum fugit ratione magni
-					sequi commodi aliquid recusandae perferendis! Maxime explicabo vero eum, eligendi aperiam quam
-					consequuntur esse, ullam odit natus voluptate placeat laborum tempore eius quasi incidunt? Ducimus, at!
-					Eum dolore ducimus, asperiores ut tempora in. Facere, nostrum sit. Velit incidunt alias nisi? Quae est
-					consequuntur laborum, magni fuga rerum voluptates, tempore voluptatum sed sint necessitatibus ipsam
-					similique ut accusamus soluta perspiciatis ab voluptate illo. Unde!
+				2013: Bitcoin Reaches $1,000
+In November 2013, Bitcoin achieved a significant psychological milestone by surpassing $1,000 in value for the first time. This rapid appreciation in price reflected growing interest from investors and media, as well as its increasing use in international remittances and online commerce. However, this period also drew attention to Bitcoin’s volatility and its association with illicit activities on platforms like Silk Road, which was shut down the same year. Despite these challenges, the $1,000 milestone underscored Bitcoin’s growing influence as a digital asset and store of value.
 			</p></article>
-			<div class="middle"></div>
-
-			<figure class="image img5" id="i5"><img src="assets/images/test-bilder/bild2.jpg" alt="" height="300px"><figcaption>Btc</figcaption></figure>
-			<figure class="image img6" id="i6"><img src="assets/images/test-bilder/Bitcoin.svg.png" alt="" height="450px"><figcaption>Btc</figcaption></figure>
 
 			<div class="middle"></div>
+
+			<figure class="image img5" id="i5"><img src="assets/images/test-bilder/bild2.jpg" alt="" height="300px">
+				<figcaption>Btc</figcaption>
+			</figure>
+			<figure class="image img6" id="i6"><img src="assets/images/test-bilder/Bitcoin.svg.png" alt=""
+					height="450px">
+				<figcaption>Btc</figcaption>
+			</figure>
+
+			<div class="middle"></div>
+
 			<article class="text6"><p>
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum aspernatur dignissimos sed facere illo pariatur nostrum autem quam quisquam odio suscipit sit nobis, laudantium voluptatem voluptates modi nulla sunt fuga blanditiis at maiores? Quo recusandae repellendus eaque nostrum nobis reiciendis quia molestiae praesentium. Dolorem laudantium beatae vitae voluptatum et possimus, ipsam, nostrum maxime repellendus corporis sint, enim quas. Dignissimos et asperiores doloremque nihil exercitationem neque dolore amet aspernatur tempore, modi explicabo recusandae qui est rerum fugit sint sequi quod sunt assumenda repellat? Veritatis hic nemo nostrum culpa quis consequuntur necessitatibus beatae quo. Nisi deleniti voluptas error suscipit illum natus quo dolorem consectetur magnam molestias asperiores rem deserunt voluptatibus commodi a reiciendis culpa maxime dolores, explicabo, sapiente ad ex sequi saepe.
-			</p></article>
+				2021: Bitcoin Hits $60,000
+				By April 2021, Bitcoin reached an all-time high of over $60,000, fueled by growing institutional adoption and retail enthusiasm. Companies like Tesla and MicroStrategy invested heavily in Bitcoin as a treasury asset, signaling a shift toward mainstream acceptance. Additionally, Bitcoin became legal tender in El Salvador, a historic moment for cryptocurrency adoption at the national level. This milestone highlighted Bitcoin’s evolution from a niche innovation to a globally recognized financial instrument, cementing its place in the modern economy.			</p></article>
+
 		</div>
 	</main>
 	<section class="cookie-banner" id="cookie-banner">
@@ -113,35 +136,37 @@
 
 	<footer class="footer">
 		<div class="footer-container">
-		  <div class="footer-section">
-			<h3>About Us</h3>
-			<p>Learn more about Bitcoin Bros.</p>
-		  </div>
-		  <div class="footer-section">
-			<h3>Quick Links</h3>
-			<ul>
-			  <li><a href="#">Home</a></li>
-			  <li><a href="#">Services</a></li>
-			  <li><a href="#">Contact</a></li>
-			  <li><a href="#">FAQ</a></li>
-			</ul>
-		  </div>
-		  <div class="footer-section">
-			<h3>Follow Us</h3>
-			<div class="social-links">
-			  <a href="#" target="_blank"><img src="assets/images/test-bilder/facebook-icon.svg" alt="Facebook"></a>
-			  <a href="#" target="_blank"><img src="assets/images/test-bilder/twitter-icon.svg" alt="Twitter"></a>
-			  <a href="#" target="_blank"><img src="assets/images/test-bilder/instagram-icon.svg" alt="Instagram"></a>
+			<div class="footer-section">
+				<h3>About Us</h3>
+				<p>Learn more about Bitcoin Bros.</p>
 			</div>
-		  </div>
+			<div class="footer-section">
+				<h3>Quick Links</h3>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">FAQ</a></li>
+				</ul>
+			</div>
+			<div class="footer-section">
+				<h3>Follow Us</h3>
+				<div class="social-links">
+					<a href="#" target="_blank"><img src="assets/images/test-bilder/facebook-icon.svg"
+							alt="Facebook"></a>
+					<a href="#" target="_blank"><img src="assets/images/test-bilder/twitter-icon.svg" alt="Twitter"></a>
+					<a href="#" target="_blank"><img src="assets/images/test-bilder/instagram-icon.svg"
+							alt="Instagram"></a>
+				</div>
+			</div>
 		</div>
 		<div class="footer-bottom">
-		  <p>&copy; 2024 Bitcoin Bros. All rights reserved.</p>
-	  <p>Made With ❤️ In 🇸🇪</p>
-	  
+			<p>&copy; 2024 Bitcoin Bros. All rights reserved.</p>
+			<p>Made With ❤️ In 🇸🇪</p>
+
 		</div>
-	  </footer>
-	  
+	</footer>
+
 
 </body>
 
