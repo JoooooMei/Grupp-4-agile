@@ -1,43 +1,58 @@
-$max-width: 36rem;
+@import '../_animations.scss';
 
 .cookie-banner {
-    background-color: gray;
-    color: black;
 
     position: fixed;
-    bottom: 0;
-    width: 100vw;
-    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    z-index: 1000;
 
-    padding: 1rem;
-    gap: 0.5rem;
-
+    max-width: 600px; // Limit the size for larger screens
+    background-color: $dark-color; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  
     h2 {
-        text-align: center;
+      font-size: 1.5rem;
+      color: white;
+      margin-bottom: 2rem
     }
-
+  
     p {
-        padding-block: 0.5rem;
-        text-align: left;
-        max-width: $max-width;
+      font-size: 1rem;
+      max-width: 24rem;
+      color: white;
+      margin-bottom: 1.5rem
     }
-
+  
     .cookie-buttons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-        max-width: $max-width;
-
-        .button {
-            width: 80vw;
-            max-width: $max-width - 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+  
+      .button {
+        border: none;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        font-size: 1rem;
+        color: #fff;
+        font-weight: 500;
+  
+        &.accept-button {
+          background-color: green; // Green for accept
+          @include button-hover-pulse; 
         }
-
+  
+        &.decline-button {
+          background-color: red; // Red for decline
+          @include button-hover-avoid; 
+        }
+      }
     }
-
-}
+  }

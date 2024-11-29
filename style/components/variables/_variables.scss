@@ -1,0 +1,23 @@
+// ********** Global variables **********
+
+$higlight-color: #f7941a;
+$dark-color: #000000;
+$bright-color: #ffffff;
+
+$base-font: system-ui;
+$display-font: 'Norwester', system-ui, sans-serif;
+
+$page-max-width: 100%;
+$page-margin: 1rem;
+$gap: 3rem;
+
+*,
+*::before,
+*::after {
+    font-family: $base-font;
+}
+
+
+// ********** Desktop only variables **********
+$d-page-max-width: 1440px;
+$d-page-margin: 4rem;

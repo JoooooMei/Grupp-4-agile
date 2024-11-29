@@ -1,95 +1,115 @@
 // ********* Menu Mobile Variables *********
 
-$page-margin: 2rem; // Set minimum outer margin of page
+// $page-margin: 2rem; // Set minimum outer margin of page
 $page-max-width: 100%; // Set max width of page 
-$header-height: 80px;
+$header-height: 80px; // Height of header
+$logo-size: calc($header-height - 10px);
 $nav-height: 100vh; // Set height of the menu slide in
-$menu-height: 70%; // Set height of menu items 
+$menu-height: auto; // Set height of menu items 
+
 $timline-width: 2px; // Set width of timeline
 $dot-size: 30px; // adjust dot size on menu timleline
 $dot-border: 5px; // adjust the border on dots => border timline
 
-// ------------------------------------------ *** NOTE TO CODE REVIEWER *** -------------------------------------------------
-//
-// Mobile menu is hidden by deault. Change these variables to see the menu  
-//
-$show-menu: none; // for visible menu: flex;
-$slide-menu-to-wp: translateX(calc(100% - $page-margin)); // for visible menu: translateX(calc(0% - $page-margin));
-//
-//---------------------------------------------------------------------------------------------------------------------------
-
-// ********* Variables that should be deleted *********
-
-$higlight-color: #f7941a;
-$dark-color: #000000;
-
-$base-font: system-ui;
-
-
-// ********* RESET CSS (Probalby delete later)  ********* 
-html {
-    overflow-x: hidden; // Hides overflow when mobile menu is hidden 
-}
-
-*,
-*::before,
-*::after {
-    // font-family: $base-font;
-    // outline: 2px solid lime;
-    box-sizing: border-box;
-}
-
-header,
-header *,
-*::before,
-*::after {
-    outline: 2px solid lime;
-    box-sizing: border-box;
-}
-
-
+// ******* Outlines for dev *******
+// header,
+// header *,
+// *::before,
+// *::after {
+//     outline: 2px solid lime;
+//     box-sizing: border-box;
+// }
 
 
 header {
     display: flex;
     position: sticky;
+    z-index: 1;
     top: 0;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    background-color: $higlight-color;
+    background-color: v.$higlight-color;
     height: $header-height;
-    padding-inline: $page-margin;
+
+    padding-inline: v.$page-margin;
+
+    // sr-only hides menu text but keeps it for screen readers 
+    .sr-only {
+        visibility: hidden;
+    }
+
+    .mobile-nav-toggle {
+        position: relative;
+        z-index: 100000;
+
+    }
 }
 
 .header-wrapper {
     display: flex;
     justify-content: space-between;
+
+
+    .logo-wrapper {
+        height: $logo-size;
+        width: $logo-size;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 
-// Remember! Nav slides in when burger button pressed
-nav {
-    display: $show-menu;
-    position: absolute;
+
+
+// Primary-navigation slides in when burger button pressed
+.primary-navigation {
+    position: fixed;
+    z-index: 9999;
     top: 0;
+    display: flex;
+    transform: translateX(calc(100% - (v.$page-margin) / 2));
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: $higlight-color;
+    background-color: v.$higlight-color;
     height: $nav-height;
-    transform: $slide-menu-to-wp;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+        rgba(50, 50, 93, 0.25) 0px 0px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 0px 60px -30px;
+    transition: transform 0.3s ease-in-out;
+
+    .image-wrapper {
+        position: absolute;
+        z-index: 999999;
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        width: 33%;
+        background-color: v.$higlight-color;
+    }
+
+    // Slide in mobile menu triggerd by nav.js
+    &[data-visible="open"] {
+        display: flex;
+        transform: translateX(calc(30% - (v.$page-margin) / 2));
+    }
+
 
     .timeline-wrapper {
         display: flex;
         flex-direction: column;
         position: absolute;
-        left: 20%; // adjust horizontal position for timeline here 
+        left: 16%; // adjust horizontal position for timeline here 
         justify-content: center;
         height: 100%;
 
         .timeline {
-            height: calc($menu-height - 25px);
-            border: $timline-width solid $dark-color;
+            height: calc(100%);
+            border: $timline-width solid v.$dark-color;
             border-radius: 2px;
         }
     }
@@ -103,13 +123,17 @@ nav {
         height: 80%;
         height: $menu-height;
         justify-content: space-between;
+        gap: 1rem;
 
         * {
             // Edit main menu styles here
             text-decoration: none;
-            font-size: 1.3rem;
+            font-family: v.$display-font;
+            font-size: 1.6rem;
             font-weight: 600;
+            letter-spacing: 4px;
             color: inherit;
+            margin-left: -30px;
         }
 
         // ********* Dots on timeline *********
@@ -119,21 +143,104 @@ nav {
             position: absolute;
             height: $dot-size;
             width: $dot-size;
-            left: calc(20% - (#{$dot-size} / 2) + $timline-width);
+            left: calc(16% - (#{$dot-size} / 2) + $timline-width); // Dot horizontal position 
+            margin-top: 5px;
             aspect-ratio: 1 / 1;
             border-radius: 100%;
-            background-color: $dark-color;
+            background-color: v.$dark-color;
             transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
-            border: 5px solid $higlight-color;
+            border: 5px solid v.$higlight-color;
+        }
+
+        li {
+            transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
         }
 
         a:hover::after {
-            transform: scale(1.2);
+            transform: scale(1.3);
         }
 
     }
 
+}
+
+// ******* Nav button styles ********
+
+.mobile-nav-toggle {
+    background-color: transparent;
+    width: 40px;
+    cursor: pointer;
+    height: 40px;
+    margin: auto 0;
+    border: none;
+}
+
+// Offset middle bar in hamburger on hover
+.mobile-nav-toggle:hover~.hamburger-wrapper .hamburger:nth-of-type(2) {
+    transform: translateX(-20%);
+}
+
+// Hamburerm menu styles
+.hamburger-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: space-around;
+    z-index: 99999;
+    height: calc(100% - 10px);
+    width: 40px;
+    align-items: center;
+    right: v.$page-margin;
+
+    // Hide middle bar in hamburger when menu is open
+    &[data-visible="open"] {
+        .hamburger:nth-of-type(2) {
+            visibility: hidden;
+        }
+    }
+
+    // Try to reset offset on mobie but does not work :( 
+    &[data-visible="closed"] {
+        .hamburger:nth-of-type(2) {
+            transform: translateX(0%);
+
+        }
+    }
+
+    // Transfort to X symbol when menu is open
+    &[data-visible="open"] {
+        .hamburger:nth-of-type(1) {
+            transform: rotate(45deg);
+            top: 11px;
+            width: 40px;
+        }
+    }
+
+    &[data-visible="open"] {
+        .hamburger:nth-of-type(3) {
+            transform: rotate(-45deg);
+            top: -11px;
+            width: 40px;
+        }
+    }
 
 
 
+    .hamburger {
+        position: relative;
+        height: 5px;
+        width: 35px;
+        background-color: v.$dark-color;
+        border-radius: 10px;
+        transition: transform 0.2s ease-in-out;
+
+        &:nth-of-type(1) {
+            margin-top: 18px;
+        }
+
+        &:nth-of-type(3) {
+            margin-bottom: 18px;
+        }
+
+    }
 }
