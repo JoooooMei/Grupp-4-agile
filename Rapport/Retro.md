@@ -75,6 +75,9 @@ Should not import empty sass-files.
 
 # What can we improve for next sprint?
 Learn more terminal-usage.
+More git commands and usage.
+A real problem where we need to go back in repository history.
+
 
 
 

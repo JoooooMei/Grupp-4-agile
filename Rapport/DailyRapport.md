@@ -237,3 +237,30 @@ __________________________________________________
 
 
 ![alt text](img/28-nov.png)
+
+## 11/29/24
+
+__________________________________________________
+# What did we accomplish?
+
+David added btc timestamps to index.html.
+Hannes R&D small fixes.
+Mansoor Cookie dialouge.
+Johan Finished header.
+__________________________________________________
+
+# What is our goal?
+
+David R&D.
+Hannes Insert copy and images in index.html. Fix timeline-tree.
+Mansoor Merge-conflicts and R&D.
+Johan R&D.
+
+__________________________________________________
+
+
+# Team Summary:
+
+
+![alt text](img/29-nov.png)
+
