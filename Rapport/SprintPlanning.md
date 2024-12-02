@@ -37,3 +37,11 @@ We have assigned the tasks related to the current sprint
 Cleaned up backlog by removing redundant tasks and redefining tasks
 
 ![Sprintplanning](img/25-nov-sprint.png)
+
+## 12/02/24
+_____________________________________________
+
+Added presentation and cleanup task to backlog.
+Assigned all backlog tasks to the current sprint, except for Validation which will be divided amongst the team later in the sprint. 
+
+![alt text](img/02-dec-sprint.png)
