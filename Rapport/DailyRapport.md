@@ -264,3 +264,26 @@ __________________________________________________
 
 ![alt text](img/29-nov.png)
 
+## 12/02/24
+
+__________________________________________________
+# What did we accomplish?
+
+David: R&D and rested for the new sprint
+Johan: R&D and rested for the new sprint
+Mansoor: R&D and rested for the new sprint
+Hannes: R&D and rested for the new sprint
+
+__________________________________________________
+
+# What is our goal?
+
+As a team: Complete our third and last sprint planning, finnish up the backlog and work on our presentation. 
+
+
+__________________________________________________
+
+
+# Team Summary:
+
+![alt text](img/02-dec.png)
