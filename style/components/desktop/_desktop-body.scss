@@ -29,19 +29,16 @@
 
 
     border-top: 5px solid rgba(0, 0, 0, 0.905);
-    
+
     display: grid;
     grid-template-columns: 1fr 20px 1fr;
-    // outline: 3px solid red;
     word-wrap: break-word;
     word-break: keep-all;
     grid-template-rows: auto;
     //background-image: url('../assets/images/test-bilder/mobile-background.jpg');
 
     /*article {
-        justify-self: start;
-        // border: 2px solid green;
-        padding: 10px;
+        border: 2px solid rgba(0, 0, 0, 0.374);
     }*/
 
     p {
@@ -61,7 +58,7 @@
         width: 10%;
         height: 70%;
         align-self: flex-end;
-        background-color: rgba(2, 22, 69, 0.808);
+        background-color: rgba(0, 0, 0, 0.808);
     }
 
     .image {
@@ -70,6 +67,8 @@
         justify-self: stretch;
         //align-self: stretch;
         text-align: center;
+        //border: 2px solid rgba(0, 0, 0, 0.374);
+        border-radius: 3px;
 
     }
 
