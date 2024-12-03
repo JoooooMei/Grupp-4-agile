@@ -287,3 +287,30 @@ __________________________________________________
 # Team Summary:
 
 ![alt text](img/02-dec.png)
+
+## 12/03/24
+
+__________________________________________________
+# What did we accomplish?
+
+David: Made the first draft of the powerpoint presentation (petcha kucha)
+Johan: Worked hard on a11y, solved issue regarding screen readers.
+Hannes: worked on and solved paralax and adjusted scroll anchors
+Mansoor: R&D and created a branch for issue 
+
+__________________________________________________
+
+# What is our goal?
+
+David: Finish up presentation so that the team can rehears tomorrow 
+Johan: Will finish up a11y, if finished early, Johan will look into SEO
+Hannes: Will start working on structured data
+Mansoor: will update meta tags and finish the cleanup task 
+
+
+__________________________________________________
+
+
+# Team Summary:
+
+![alt text](img/03-dec.png)
