@@ -1,7 +1,8 @@
 //Smooth scrolling when clicking links and adjusts position so content doesnt get covered by header.
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 120px;
+    scroll-padding-top: 40px;
+
 }
 body {
     @import 'components/mobile/mobile-header';
