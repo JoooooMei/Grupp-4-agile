@@ -1,5 +1,9 @@
 @media screen and (max-width: 768px) {
 
+    article h2 {
+        margin: 30px 20px 0 20px;
+    }
+
     .parallax {
         background-image: url('../assets/images/test-bilder/background.jpeg');
         min-height: 88vh;
@@ -44,6 +48,7 @@
         }*/
 
         figcaption {
+            display: none;
             outline: 2px solid rgba(0, 0, 0, 0.255);
             text-align: center;
             background-color: rgba($color: #000000, $alpha: 0.2);

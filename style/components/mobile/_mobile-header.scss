@@ -70,15 +70,13 @@ header {
     z-index: 9999;
     top: 0;
     display: flex;
-    transform: translateX(calc(100% - (v.$page-margin) / 2));
+    transform: translateX(calc(120% - (v.$page-margin) / 2));
     justify-content: center;
     align-items: center;
     width: 100%;
     background-color: v.$higlight-color;
     height: $nav-height;
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
-        rgba(50, 50, 93, 0.25) 0px 0px 100px -20px,
-        rgba(0, 0, 0, 0.3) 0px 0px 60px -30px;
+
     transition: transform 0.3s ease-in-out;
 
     .image-wrapper {
@@ -96,6 +94,9 @@ header {
     &[data-visible="open"] {
         display: flex;
         transform: translateX(calc(30% - (v.$page-margin) / 2));
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+            rgba(50, 50, 93, 0.25) 0px 0px 100px -20px,
+            rgba(0, 0, 0, 0.3) 0px 0px 60px -30px;
     }
 
 
