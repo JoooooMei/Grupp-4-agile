@@ -70,7 +70,7 @@ header {
     z-index: 9999;
     top: 0;
     display: flex;
-    transform: translateX(calc(100% - (v.$page-margin) / 2));
+    transform: translateX(calc(120% - (v.$page-margin) / 2));
     justify-content: center;
     align-items: center;
     width: 100%;
