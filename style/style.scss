@@ -6,13 +6,10 @@
 /* Base CSS */
 @import 'mobile';
 
-
-
 /* Desktop CSS */
 @media screen and (min-width: 768px) {
     @import 'desktop';
 }
-//Change style here for users that have a setting in OS for reduced motions.
-@media (prefers-reduced-motion: reduce){
 
-}
+//Change style here for users that have a setting in OS for reduced motions.
+@media (prefers-reduced-motion: reduce) {}
