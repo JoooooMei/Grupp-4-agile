@@ -341,3 +341,30 @@ __________________________________________________
 
 # Team Summary:
 ![alt text](img/04-dec.png)
+
+## 12/05/24
+
+__________________________________________________
+# What did we accomplish?
+
+David: Pecha kutcha is finished 
+Johan: Worked on pecha kutcha script 
+Mansoor: R&D
+Hannes: Worked on the structured data, pecha kutcha script and some R&D
+
+__________________________________________________
+
+# What is our goal?
+
+David: finishing up with R&D
+Johan: Work on validation 
+Mansoor: Work on cleanup task
+Hannes: complete the pecha kutcha 
+
+
+__________________________________________________
+
+
+# Team Summary:
+
+![alt text](img/05-dec.png)
