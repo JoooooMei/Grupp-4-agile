@@ -314,3 +314,57 @@ __________________________________________________
 # Team Summary:
 
 ![alt text](img/03-dec.png)
+
+## 12/04/24
+
+__________________________________________________
+# What did we accomplish?
+
+David: Petcha kucha är avklarad!
+Johan: a11y är klart, jobbade på reviews och gav bra feedback
+Mansoor: gjorde klart en bit av SEO task med metatags
+Hannes: Skapade pull request för parallax
+
+
+__________________________________________________
+
+# What is our goal?
+
+David: sista tourches på pecha kutcha presentationen 
+Johan: jobbar på valideringstask, inväntar en merge 
+Mansoor: inväntar merges och kör sedan på cleanup task
+Hannes: jobbar på structured data tasken 
+
+
+__________________________________________________
+
+
+# Team Summary:
+![alt text](img/04-dec.png)
+
+## 12/05/24
+
+__________________________________________________
+# What did we accomplish?
+
+David: Pecha kutcha is finished 
+Johan: Worked on pecha kutcha script 
+Mansoor: R&D
+Hannes: Worked on the structured data, pecha kutcha script and some R&D
+
+__________________________________________________
+
+# What is our goal?
+
+David: finishing up with R&D
+Johan: Work on validation 
+Mansoor: Work on cleanup task
+Hannes: complete the pecha kutcha 
+
+
+__________________________________________________
+
+
+# Team Summary:
+
+![alt text](img/05-dec.png)
