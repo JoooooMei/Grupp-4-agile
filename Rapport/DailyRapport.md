@@ -368,3 +368,34 @@ __________________________________________________
 # Team Summary:
 
 ![alt text](img/05-dec.png)
+
+# Team Summary:
+![alt text](img/04-dec.png)
+
+## 12/06/24
+
+__________________________________________________
+# What did we accomplish?
+
+Johan: Validation.
+Mansoor: Cleanup + pull request.
+David: Finished pecha kucha presentation.
+Hannes: Fixes & structured data.
+__________________________________________________
+
+# What is our goal?
+
+Johan: Individual assignment.
+Mansoor: Individual assignment.
+David: Individual assignment.
+Hannes: Individual assignment.
+
+__________________________________________________
+
+
+# Team Summary:
+
+Pecha kucha practice & presentation.
+The grand merge.
+
+![alt text](img/06-dec.png)
