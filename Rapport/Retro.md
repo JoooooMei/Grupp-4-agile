@@ -42,3 +42,42 @@ Creating a development branch.
 
 Creating global variables.
 
+
+
+## 12/06/24
+
+_____________________________________________
+
+
+# Emotional Evaluation (Glad, Sad, Mad)
+(Happens at the end of each sprint)
+
+Johan:
+    Glad: Its great.
+    Sad: Stressed about individual assignment.
+    Mad: Mad about the sadness.
+Hannes:
+    Glad: Happy about the outcome of project and presentation. 
+    Sad: The group project is done.
+    Mad: Individual assignment not finished.
+Mansoor:
+    Glad: Happy about the presentation outcome and that the final merge worked.
+    Sad: That it's the last day of the group assignmnet.
+    Mad: ---
+David:
+    Glad: Happy about everything, project has worked well.
+    Sad: The group project is done.
+    Mad: The pecha kucha preparation.
+
+
+# What have we learned from this sprint?
+
+A lot. Git, github, merging, pecha kucha, branching, miro, scrum.
+Task estimation, structuring tasks, agile workflows. 
+
+# What can we improve for next sprint?
+
+Use more function of github-projects e.g. iterations.
+Try more scrum-roles.
+
+![Final-retro]()
