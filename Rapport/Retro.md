@@ -78,6 +78,34 @@ Learn more terminal-usage.
 More git commands and usage.
 A real problem where we need to go back in repository history.
 
+## 12/06/24
+
+_____________________________________________
 
 
+# Emotional Evaluation (Glad, Sad, Mad)
+(Happens at the end of each sprint)
+
+Johan:
+    Glad:
+    Sad: 
+    Mad: 
+Hannes:
+    Glad:
+    Sad: 
+    Mad: 
+Mansoor:
+    Glad:
+    Sad: 
+    Mad: 
+David:
+    Glad:
+    Sad: 
+    Mad: 
+
+
+# What have we learned from this sprint?
+
+
+# What can we improve for next sprint?
 
