@@ -45,11 +45,6 @@ article h2 {
     word-wrap: break-word;
     word-break: keep-all;
     grid-template-rows: auto;
-    //background-image: url('../assets/images/test-bilder/mobile-background.jpg');
-
-    /*article {
-        border: 2px solid rgba(0, 0, 0, 0.374);
-    }*/
 
     p {
         padding: 20px;
@@ -75,9 +70,7 @@ article h2 {
         padding: 5px 0;
         display: flex;
         justify-self: stretch;
-        //align-self: stretch;
         text-align: center;
-        //border: 2px solid rgba(0, 0, 0, 0.374);
         border-radius: 3px;
 
     }
