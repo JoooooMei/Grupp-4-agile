@@ -1,10 +1,3 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 11 |     @import 'components/desktop/desktop-cookie';
- *    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   _desktop.scss 11:13  @import
- *   style.scss 13:13     root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -16,3 +9,4 @@ body::before {
   border-bottom: 2px solid black;
   content: "Error: Can't find stylesheet to import.\a    \2577 \a 11 \2502      @import 'components/desktop/desktop-cookie';\a    \2502              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   _desktop.scss 11:13  @import\a   style.scss 13:13     root stylesheet";
 }
+
