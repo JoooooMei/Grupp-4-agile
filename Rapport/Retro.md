@@ -54,14 +54,17 @@ Johan:
     Glad: Everythings works.
     Sad: Finish JS on my own instead of using AI.
     Mad: ---
+    
 Hannes:
     Glad: We got a working page. Everything runs smooth.
     Sad: Nothing.
     Mad: ---
+    
 Mansoor:
     Glad: Deploy to sprint features to main worked great.
     Sad: Couldn't get confetti-animations work without external library.
     Mad: ---
+    
 David:
     Glad: Everything works, merging and everything.
     Sad: Struggled with footer. Room for development.
