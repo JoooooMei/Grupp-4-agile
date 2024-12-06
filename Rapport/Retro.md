@@ -6,9 +6,9 @@ _____________________________________________
 # Emotional Evaluation (Glad, Sad, Mad)
 (Happens at the end of each sprint)
 
-Johan:
-    Glad: Happy for great teamwork. Having learned many things from the group members.
-    Sad: Falling behind with work outside of the Agile project.
+Johan:\
+    Glad: Happy for great teamwork. Having learned many things from the group members.\
+    Sad: Falling behind with work outside of the Agile project.\
     Mad: -----
 Hannes:
     Glad: Pain-free development of Agile project. Moving forward with ease.
