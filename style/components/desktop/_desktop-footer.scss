@@ -1,0 +1,117 @@
+$footer-bg-gradient: linear-gradient(to right, #1e1e2f, #282c34);
+$text-color: #d0d0d0;
+$footer-bottom-bg-color: #333;
+$hover-color: #fff;
+$primary-padding: 60px;
+$secondary-padding: 20px;
+$golden-yellow: #ffc400;
+
+$min-width-section: 250px;
+$footer-max-width: 1400px;
+
+.footer {
+  background: $footer-bg-gradient;
+  color: $text-color;
+  padding-top: $primary-padding;
+  padding-bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: $footer-max-width;
+    margin: 0 auto;
+    padding: 0 $secondary-padding;
+    width: 100%;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-section {
+      flex: 0 1 auto;
+      min-width: $min-width-section;
+      margin-bottom: $secondary-padding;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h3 {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: $golden-yellow;
+      }
+
+      p,
+      ul {
+        color: $golden-yellow;
+        text-align: center;
+        font-size: 0.9rem;
+        line-height: 1.5;
+      }
+
+      ul {
+        display: flex;
+        padding: 0;
+        list-style-type: none;
+
+        li {
+          margin: 0 10px;
+          text-align: center;
+
+          a {
+            color: $golden-yellow;
+            text-decoration: none;
+            transition: color 0.3s ease;
+
+            &:hover {
+              color: $hover-color;
+            }
+          }
+        }
+      }
+
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+
+        a img {
+          width: 20px;
+          height: 20px;
+          transition: transform 0.3s ease;
+        }
+
+        a:hover img {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+    background-color: $footer-bottom-bg-color;
+    padding: $secondary-padding;
+    font-size: 0.8rem;
+    margin-top: $primary-padding;
+
+    p {
+      margin: 5px 0;
+
+      &:first-child {
+        font-weight: bold;
+      }
+    }
+  }
+}

@@ -1,9 +1,12 @@
+
+html {
+    scroll-padding-top: 80px;
+}
+
 body {
     @import 'components/desktop/desktop-header';
 
     @import 'components/desktop/desktop-body';
-
-    @import 'components/desktop/desktop-cookie';
 
     @import 'components/desktop/desktop-footer';
 }
