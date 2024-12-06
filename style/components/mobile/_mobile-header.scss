@@ -1,6 +1,5 @@
 // ********* Menu Mobile Variables *********
 
-// $page-margin: 2rem; // Set minimum outer margin of page
 $page-max-width: 100%; // Set max width of page 
 $header-height: 80px; // Height of header
 $logo-size: calc($header-height - 10px);
@@ -10,16 +9,6 @@ $menu-height: auto; // Set height of menu items
 $timline-width: 2px; // Set width of timeline
 $dot-size: 30px; // adjust dot size on menu timleline
 $dot-border: 5px; // adjust the border on dots => border timline
-
-// ******* Outlines for dev *******
-// header,
-// header *,
-// *::before,
-// *::after {
-//     outline: 2px solid lime;
-//     box-sizing: border-box;
-// }
-
 
 header {
     display: flex;

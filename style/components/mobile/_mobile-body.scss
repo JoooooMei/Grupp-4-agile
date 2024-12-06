@@ -43,10 +43,6 @@
 
 
 
-        /*article {
-            margin: auto;
-        }*/
-
         figcaption {
             display: none;
             outline: 2px solid rgba(0, 0, 0, 0.255);
@@ -58,8 +54,6 @@
             padding: 20px;
             width: 100%;
             background-color: white;
-            //z-index: 33;
-            //color: aliceblue;
         }
 
         .middle {
@@ -69,7 +63,6 @@
         .image {
             flex: 1;
             justify-self: stretch;
-            //outline: 3px solid red;
             width: 100%;
         }
 
