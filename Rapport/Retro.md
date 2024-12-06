@@ -9,18 +9,18 @@ _____________________________________________
 Johan:\
     Glad: Happy for great teamwork. Having learned many things from the group members.\
     Sad: Falling behind with work outside of the Agile project.\
-    Mad: -----
-Hannes:
-    Glad: Pain-free development of Agile project. Moving forward with ease.
-    Sad: That the project is too short. Should be longer!
-    Mad: ...
-Mansoor:
-    Glad: Team-work makes the world move around. Same as above!
-    Sad: Winter is coming.
-    Mad: ---
-David:
-    Glad: Great team-work. Loving life. Loving the project.
-    Sad: Not having done as much work on the footer as I'd wish.
+    Mad: -----\
+Hannes:\
+    Glad: Pain-free development of Agile project. Moving forward with ease.\
+    Sad: That the project is too short. Should be longer!\
+    Mad: ...\
+Mansoor:\
+    Glad: Team-work makes the world move around. Same as above!\
+    Sad: Winter is coming.\
+    Mad: ---\
+David:\
+    Glad: Great team-work. Loving life. Loving the project.\
+    Sad: Not having done as much work on the footer as I'd wish.\
     Mad: ...
 
 
