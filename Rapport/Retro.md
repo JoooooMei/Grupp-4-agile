@@ -1,9 +1,9 @@
-## 11/22/24
+# 11/22/24
 
 _____________________________________________
 
 
-# Emotional Evaluation (Glad, Sad, Mad)
+## Emotional Evaluation (Glad, Sad, Mad)
 (Happens at the end of each sprint)
 
 Johan:\
@@ -24,7 +24,7 @@ David:\
     Mad: ...
 
 
-# What have we learned from this sprint?
+## What have we learned from this sprint?
 
 Branching. Merging. Pull request. Basic merge conflict handling.
 
@@ -34,7 +34,7 @@ How to think in terms of Agile team development.
 
 David learned Sass.
 
-# What can we improve for next sprint?
+## What can we improve for next sprint?
 
 Add an 'in-review' column to the planning poker.
 
@@ -42,12 +42,12 @@ Creating a development branch.
 
 Creating global variables.
 
-## 11/29/24
+# 11/29/24
 
 _____________________________________________
 
 
-# Emotional Evaluation (Glad, Sad, Mad)
+## Emotional Evaluation (Glad, Sad, Mad)
 (Happens at the end of each sprint)
 
 Johan:\
@@ -68,23 +68,23 @@ David:\
     Mad: ---\
 
 
-# What have we learned from this sprint?
+## What have we learned from this sprint?
 Comfortability in using git & github. Resolving conflicts.\
 How to have a structured project with branches and file-structure.\
 Should not import empty sass-files.
 
-# What can we improve for next sprint?
+## What can we improve for next sprint?
 Learn more terminal-usage.\
 More git commands and usage.\
 A real problem where we need to go back in repository history.\
 
 
-## 12/06/24
+# 12/06/24
 
 _____________________________________________
 
 
-# Emotional Evaluation (Glad, Sad, Mad)
+## Emotional Evaluation (Glad, Sad, Mad)
 (Happens at the end of each sprint)
 
 Johan:\
@@ -105,14 +105,14 @@ David:\
     Mad: The pecha kucha preparation.\
 
 
-# What have we learned from this sprint?
+## What have we learned from this sprint?
 
 A lot. Git, github, merging, pecha kucha, branching, miro, scrum.\
 Task estimation, structuring tasks, agile workflows. 
 
-# What can we improve for next sprint?
+## What can we improve for next sprint?
 
 Use more function of github-projects e.g. iterations.\
 Try more scrum-roles.
 
-![Final-retro]()
+![alt text](img/06-dec-retro.png)
