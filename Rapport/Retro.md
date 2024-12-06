@@ -78,6 +78,7 @@ Learn more terminal-usage.
 More git commands and usage.
 A real problem where we need to go back in repository history.
 
+
 ## 12/06/24
 
 _____________________________________________
@@ -87,25 +88,31 @@ _____________________________________________
 (Happens at the end of each sprint)
 
 Johan:
-    Glad:
-    Sad: 
-    Mad: 
+    Glad: Its great.
+    Sad: Stressed about individual assignment.
+    Mad: Mad about the sadness.
 Hannes:
-    Glad:
-    Sad: 
-    Mad: 
+    Glad: Happy about the outcome of project and presentation. 
+    Sad: The group project is done.
+    Mad: Individual assignment not finished.
 Mansoor:
-    Glad:
-    Sad: 
-    Mad: 
+    Glad: Happy about the presentation outcome and that the final merge worked.
+    Sad: That it's the last day of the group assignmnet.
+    Mad: ---
 David:
-    Glad:
-    Sad: 
-    Mad: 
+    Glad: Happy about everything, project has worked well.
+    Sad: The group project is done.
+    Mad: The pecha kucha preparation.
 
 
 # What have we learned from this sprint?
 
+A lot. Git, github, merging, pecha kucha, branching, miro, scrum.
+Task estimation, structuring tasks, agile workflows. 
 
 # What can we improve for next sprint?
 
+Use more function of github-projects e.g. iterations.
+Try more scrum-roles.
+
+![Final-retro]()
