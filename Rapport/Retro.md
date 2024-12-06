@@ -42,3 +42,70 @@ Creating a development branch.
 
 Creating global variables.
 
+## 11/29/24
+
+_____________________________________________
+
+
+# Emotional Evaluation (Glad, Sad, Mad)
+(Happens at the end of each sprint)
+
+Johan:
+    Glad: Everythings works.
+    Sad: Finish JS on my own instead of using AI.
+    Mad: ---
+Hannes:
+    Glad: We got a working page. Everything runs smooth.
+    Sad: Nothing.
+    Mad: ---
+Mansoor:
+    Glad: Deploy to sprint features to main worked great.
+    Sad: Couldn't get confetti-animations work without external library.
+    Mad: ---
+David:
+    Glad: Everything works, merging and everything.
+    Sad: Struggled with footer. Room for development.
+    Mad: ---
+
+
+# What have we learned from this sprint?
+Comfortability in using git & github. Resolving conflicts.
+How to have a structured project with branches and file-structure.
+Should not import empty sass-files.
+
+# What can we improve for next sprint?
+Learn more terminal-usage.
+More git commands and usage.
+A real problem where we need to go back in repository history.
+
+## 12/06/24
+
+_____________________________________________
+
+
+# Emotional Evaluation (Glad, Sad, Mad)
+(Happens at the end of each sprint)
+
+Johan:
+    Glad:
+    Sad: 
+    Mad: 
+Hannes:
+    Glad:
+    Sad: 
+    Mad: 
+Mansoor:
+    Glad:
+    Sad: 
+    Mad: 
+David:
+    Glad:
+    Sad: 
+    Mad: 
+
+
+# What have we learned from this sprint?
+
+
+# What can we improve for next sprint?
+

@@ -2,57 +2,57 @@
 
 .cookie-banner {
 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-    z-index: 1000;
+  z-index: 1000;
 
-    max-width: 600px; // Limit the size for larger screens
-    background-color: $dark-color; 
-    border: 1px solid #ccc; 
-    border-radius: 8px; 
-    padding: 20px;
-    text-align: center;
-    font-family: Arial, sans-serif;
-  
-    h2 {
-      font-size: 1.5rem;
-      color: white;
-      margin-bottom: 2rem
-    }
-  
-    p {
+  max-width: 600px; // Limit the size for larger screens
+  background-color: $dark-color;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+
+  h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 2rem
+  }
+
+  p {
+    font-size: 1rem;
+    max-width: 24rem;
+    color: white;
+    margin-bottom: 1.5rem
+  }
+
+  .cookie-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .button {
+      border: none;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
       font-size: 1rem;
-      max-width: 24rem;
-      color: white;
-      margin-bottom: 1.5rem
-    }
-  
-    .cookie-buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-  
-      .button {
-        border: none;
-        border-radius: 5px;
-        padding: 0.5rem 1rem;
-        cursor: pointer;
-        font-size: 1rem;
-        color: #fff;
-        font-weight: 500;
-  
-        &.accept-button {
-          background-color: green; // Green for accept
-          @include button-hover-pulse; 
-        }
-  
-        &.decline-button {
-          background-color: red; // Red for decline
-          @include button-hover-avoid; 
-        }
+      color: #fff;
+      font-weight: 500;
+
+      &.accept-button {
+        background-color: green; // Green for accept
+        @include button-hover-pulse;
+      }
+
+      &.decline-button {
+        background-color: rgb(214, 0, 0); // Red for decline
+        @include button-hover-avoid;
       }
     }
   }
+}

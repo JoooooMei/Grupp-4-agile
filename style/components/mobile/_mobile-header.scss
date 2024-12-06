@@ -1,6 +1,5 @@
 // ********* Menu Mobile Variables *********
 
-// $page-margin: 2rem; // Set minimum outer margin of page
 $page-max-width: 100%; // Set max width of page 
 $header-height: 80px; // Height of header
 $logo-size: calc($header-height - 10px);
@@ -10,16 +9,6 @@ $menu-height: auto; // Set height of menu items
 $timline-width: 2px; // Set width of timeline
 $dot-size: 30px; // adjust dot size on menu timleline
 $dot-border: 5px; // adjust the border on dots => border timline
-
-// ******* Outlines for dev *******
-// header,
-// header *,
-// *::before,
-// *::after {
-//     outline: 2px solid lime;
-//     box-sizing: border-box;
-// }
-
 
 header {
     display: flex;
@@ -70,15 +59,13 @@ header {
     z-index: 9999;
     top: 0;
     display: flex;
-    transform: translateX(calc(100% - (v.$page-margin) / 2));
+    transform: translateX(calc(120% - (v.$page-margin) / 2));
     justify-content: center;
     align-items: center;
     width: 100%;
     background-color: v.$higlight-color;
     height: $nav-height;
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
-        rgba(50, 50, 93, 0.25) 0px 0px 100px -20px,
-        rgba(0, 0, 0, 0.3) 0px 0px 60px -30px;
+
     transition: transform 0.3s ease-in-out;
 
     .image-wrapper {
@@ -96,6 +83,9 @@ header {
     &[data-visible="open"] {
         display: flex;
         transform: translateX(calc(30% - (v.$page-margin) / 2));
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+            rgba(50, 50, 93, 0.25) 0px 0px 100px -20px,
+            rgba(0, 0, 0, 0.3) 0px 0px 60px -30px;
     }
 
 
